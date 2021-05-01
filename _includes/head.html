@@ -6,7 +6,7 @@
     <title>{% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.content | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <meta name="keywords" content="year in review,2020,Design,UX,UI,Web,Development,branding,portfolio,personal,site">
+    <meta name="keywords" content="year in review,2021,Design,UX,UI,Web,Development,branding,portfolio,personal,site">
     <meta name="author" content="Rehan Butt">
     <link rel="icon" type="image/png" href="../img/favicon.png"/>
     <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
@@ -21,7 +21,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ '/img/site-preview.jpg' | prepend: site.baseurl | prepend: site.url }}" />
 
-    <link rel="stylesheet" href="{{" /css/foundation.css" | prepend: site.baseurl }}"/>
     <link rel="stylesheet" href="{{" /css/rehan.css" | prepend: site.baseurl }}"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 

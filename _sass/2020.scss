@@ -11,6 +11,11 @@
       }
       padding-bottom: 4em;
       padding-top: 3em;
+      .logo{
+        img{
+          height: 50px;
+        }
+      }
     }
     .twenty-container{
       margin-top: 2em;
@@ -25,7 +30,7 @@
         font-size: 6em;
       }
       @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
+        color: $pure-white;
       }
     }
     h1{
@@ -48,7 +53,7 @@
         line-height: 2.6rem;
       }
       @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
+        color: $pure-white;
       }
     }
   }
@@ -59,7 +64,7 @@
     padding-bottom: 12rem;
     @media (prefers-color-scheme: dark) {
       background-color: #06080C;
-      color: $pure-white-dark;
+      color: $pure-white;
     }
     @media screen and (max-width: 64em) {
       padding-top: 3rem;
@@ -102,466 +107,6 @@
     }
   }
 
-  .website{
-    .dragonfruit-container{
-      font-family: $montserrat;
-      text-align: center;
-      padding: 6rem 0;
-      background: url(../img/dots.svg);
-      @media (prefers-color-scheme: dark) {
-        background: url(../img/dots-darkmode.svg);
-      }
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 100%;
-      @media screen and (max-width: 40em) {
-        padding: 3rem 0;
-      }
-      span{
-        display: block;
-      }
-      .site-name{
-        font-weight: $montserrat-bold;
-        color: #AC2C4C;
-        font-size: 2vw;
-        @media (prefers-color-scheme: dark) {
-          color: darken(#AC2C4C, 10%);
-        }
-        @media screen and (max-width: 64em) {
-          font-size: 4vw;
-          line-height: 4vw;
-        }
-        @media screen and (max-width: 40em) {
-          font-size: 6vw;
-          line-height: 6vw;
-        }
-        a{
-          color: #AC2C4C;
-          font-style: italic;
-          @media (prefers-color-scheme: dark) {
-            color: darken(#AC2C4C, 10%);
-          }
-        }
-      }
-      .launched{
-        font-weight: $montserrat-light;
-        color: #AC2C4C;
-        font-size: 10vw;
-        @media (prefers-color-scheme: dark) {
-          color: darken(#AC2C4C, 10%);
-        }
-      }
-      .dragon{
-        font-weight: $montserrat-bold;
-        color: #DB3F66;
-        font-size: 14vw;
-        margin-top: -11vw;
-        @media (prefers-color-scheme: dark) {
-          color: darken(#DB3F66, 15%);
-        }
-        span{
-          display: inline-block;
-          img{
-            width: 10vw;
-          }
-        }
-      }
-    }
-    .tile-container{
-      .big-bold{
-        padding: 2rem 2rem;
-        background: linear-gradient(120deg, rgba(69,188,242,1) 0%, rgba(17,102,142,1) 100%);
-        color: $pure-white;
-        @media (prefers-color-scheme: dark) {
-          background: linear-gradient(120deg, darken(rgba(69,188,242,1), 30%) 0%, darken(rgba(17,102,142,1), 30%) 100%);
-          color: $pure-white-dark;
-        }
-        font-size: 10rem;
-        line-height: 9rem;
-        font-family: $zilla;
-        span{
-          display: block;
-        }
-        .big{
-          font-weight: $zilla-bold;
-          span{
-            display: inline-block;
-          }
-          .b{
-            font-size: 0.8em;
-            margin-right: -0.2em;
-          }
-          .i{
-            font-size: 0.9em;
-            margin-right: -0.2em;
-          }
-          .g{}
-        }
-        .bold{
-          font-weight: $zilla-bold;
-        }
-        @media screen and (max-width: 64em) {
-          font-size: 4em;
-          line-height: 4rem;
-        }
-        @media screen and (max-width: 40em) {
-          font-size: 6em;
-          line-height: 6rem;
-        }
-      }
-      .new-footer{
-        @media (prefers-color-scheme: dark) {
-          background-color: $navy-black-muted;
-        }
-        .foot{
-          padding: 2rem 2rem;
-          @media (prefers-color-scheme: dark) {
-            img{
-              filter: opacity(40%);
-            }
-          }
-        }
-        .title-container{
-          padding: 2rem 2rem;
-          border-radius: 0 0 40px 40px;
-          color: $pure-white;
-          font-size: 10rem;
-          line-height: 9rem;
-          font-family: $zilla;
-          font-weight: $zilla-bold;
-          background: linear-gradient(225deg, rgba(0,218,209,1) 0%, rgba(0,241,159,1) 100%);
-          @media (prefers-color-scheme: dark) {
-            background: linear-gradient(120deg, darken(rgba(0,218,209,1), 30%) 0%, darken(rgba(0,241,159,1), 30%) 100%);
-            color: $pure-white-dark;
-          }
-          @media screen and (max-width: 64em) {
-            font-size: 4em;
-            line-height: 4rem;
-          }
-          @media screen and (max-width: 40em) {
-            font-size: 6em;
-            line-height: 6rem;
-          }
-        }
-      }
-      .dark-mode{
-        padding: 2rem 2rem;
-        color: $navy-black;
-        font-size: 5rem;
-        line-height: 5rem;
-        font-family: $zilla;
-        font-weight: $zilla-bold;
-        background:
-        radial-gradient(circle at 0% 100%, rgba($navy-black,1) 0%, rgba($navy-black,1) 45%, rgba($navy-black,0) 45%),
-        linear-gradient(45deg, rgba(255,221,30,1) 0%, rgba(255,255,255,1) 100%);
-        @media (prefers-color-scheme: dark) {
-          color: $navy-black-dark;
-          background:
-          radial-gradient(circle at 0% 100%, rgba($navy-black-dark,1) 0%, rgba($navy-black-dark,1) 45%, rgba($navy-black-dark,0) 45%),
-          linear-gradient(45deg, darken(rgba(255,221,30,1), 30%) 0%, darken(rgba(255,255,255,1), 30%) 100%)
-        }
-        .text{
-          @media screen and (max-width: 64em) {
-            text-shadow: 0px 0px 50px rgba(255,221,30,1);
-          }
-        }
-        span{
-          display: block;
-        }
-        .moon{
-          @media screen and (max-width: 64em) {
-            width: 40%;
-          }
-          @media screen and (max-width: 40em) {
-            width: 30%;
-          }
-        }
-        @media screen and (max-width: 64em) {
-          background: radial-gradient(circle at 0% 100%, rgba($navy-black,1) 0%, rgba($navy-black,1) 35%, rgba($navy-black,0) 35%),
-          linear-gradient(45deg, rgba(255,221,30,1) 0%, rgba(255,255,255,1) 100%);
-          @media (prefers-color-scheme: dark) {
-            background:
-            radial-gradient(circle at 0% 100%, rgba($navy-black-dark,1) 0%, rgba($navy-black-dark,1) 35%, rgba($navy-black-dark,0) 35%),
-            linear-gradient(45deg, darken(rgba(255,221,30,1), 30%) 0%, darken(rgba(255,255,255,1), 30%) 100%)
-          }
-        }
-      }
-      .speed{
-        padding: 2rem 2rem;
-        color: $pure-white;
-        background: url(../img/speed-stripes.svg), linear-gradient(45deg, rgba(241,206,0,1) 0%, rgba(255,161,0,1) 100%);
-        background-repeat: no-repeat;
-        background-position: center;
-        font-size: 4rem;
-        line-height: 4rem;
-        font-family: $zilla;
-        font-weight: $zilla-bold;
-        @media (prefers-color-scheme: dark) {
-          color: $pure-white-dark;
-          background: url(../img/speed-stripes-darkmode.svg), linear-gradient(45deg, darken(rgba(241,206,0,1),30%) 0%, darken(rgba(255,161,0,1), 30%) 100%);
-
-        }
-        span{
-          display: block;
-        }
-        @media screen and (max-width: 64em) {
-          font-size: 2.3em;
-          line-height: 2.3rem;
-        }
-      }
-      .resources{
-        background-color: $signature-teal;
-        color: $pure-white;
-        font-family: $zilla;
-        @media (prefers-color-scheme: dark) {
-          background-color: $signature-teal-dark;
-        }
-        .cell{
-          padding: 3rem;
-          @media screen and (max-width: 64em) {
-            padding: 2rem;
-          }
-        }
-        p{
-          font-size: 2.5em;
-          padding: 0;
-
-        }
-        .title{
-          font-weight: $zilla-bold;
-          margin-bottom: 0;
-          margin-top: 0.5em;
-        }
-        .description{
-          margin-top: 0;
-          line-height: 1.2em;
-        }
-        .pill-container{
-          font-size: 0.5em;
-          font-family: $lato;
-          font-weight: $lato-bold;
-          .pill{
-            padding: 1em 2.5em 1em 2.5em;
-            background-color: $pure-white;
-            color: $signature-teal;
-            display: inline-block;
-            border-radius: 50px;
-            margin: 5px;
-            @media (prefers-color-scheme: dark) {
-              color: $signature-teal-dark;
-              background-color: $pure-white-dark;
-            }
-            &:hover{
-              background-color: $navy-black;
-              color: $pure-white;
-            }
-            @media screen and (max-width: 40em) {
-              margin-left: 1px;
-              margin-right: 1px;
-            }
-            p{
-              margin: 0;
-            }
-          }
-          .special{
-            color: $pure-white;
-            background-color: $navy-black;
-            @media (prefers-color-scheme: dark) {
-              color: $pure-white-dark;
-            }
-            &:hover{
-              color: $pure-white;
-              background-image: linear-gradient(90deg, #00a2e2 0%, #1bad6b 20%, #fec609 40%, #e92687 60%, #6d358d 80%, #00a2e2 100%);
-              background-size: 200% auto;
-              animation: rainbow 3s linear infinite;
-            }
-          }
-        }
-        @media screen and (max-width: 64em) {
-          font-size: 0.7em;
-        }
-      }
-    }
-    .tile{
-      border-radius: 40px;
-      min-height: 43rem;
-      -webkit-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      -moz-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      @media screen and (max-width: 64em) {
-        min-height: 30rem;
-      }
-    }
-    .sub-text{
-      text-align: center;
-      margin-top: 4rem;
-      p{
-        margin-bottom: 0;
-        margin-top: 0;
-        font-family: $zilla;
-        font-weight: $zilla-bold;
-        font-size: 2rem;
-        line-height: 2.4rem;
-        padding: 0;
-        &:nth-of-type(2){
-          font-size: 3rem;
-        }
-      }
-    }
-  }
-
-  .speaking{
-    margin-bottom: 10em;
-    margin-top: 15em;
-    @media screen and (max-width: 64em) {
-      font-size: 0.8em;
-    }
-    .attended-title{
-      margin-bottom: 5em;
-      .main{
-        font-weight: $lato-bold;
-        font-size: 2.5em;
-        line-height: 1.2em;
-        .inject{
-          position: relative;
-          font-family: $caveat;
-          span{
-            font-size: 0.7em;
-            position: absolute;
-            margin-top: -1.2em;
-            margin-left: -1.4em;
-          }
-        }
-      }
-      .sub{
-        font-size: 1.8em;
-        line-height: 1.2em;
-      }
-      p{
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-    }
-    .attended{
-      margin-bottom: 8em;
-      img{
-        @media (prefers-color-scheme: dark) {
-          filter: brightness(240%) grayscale(80%);
-        }
-      }
-    }
-    .spoken{
-      .section-title{
-        margin-bottom: 12em;
-        p{
-          font-family: $zilla;
-          font-weight: $zilla-bold;
-          text-align: center;
-          font-size: 2.2em;
-          line-height: 1.2em;
-        }
-      }
-      .title, .description{
-        padding: 0;
-        margin: 0;
-      }
-      .title{
-        font-size: 2em;
-        font-weight: $lato-bold;
-        line-height: 1.1em;
-        margin-bottom: 0.5em;
-      }
-      .description{
-        line-height: 1.3em;
-        margin-bottom: 1em;
-        @media screen and (max-width: 64em) {
-          font-size: 1.3em;
-        }
-      }
-      .everything-app{
-        @media screen and (max-width: 40em) {
-          margin-bottom: 12em;
-        }
-      }
-      .everything-app, .design-system{
-        background-color: #f5f5f5;
-        border-radius: 40px;
-        padding: 2em;
-        .image-container{
-          text-align: center;
-          img{
-            max-width: 70%;
-            margin-top: -14em;
-          }
-        }
-        @media (prefers-color-scheme: dark) {
-          background-color: $navy-black-dark;
-        }
-        .talk-button{
-          color: $signature-teal;
-          border: solid 0.1em $signature-teal;
-          border-radius: 12px;
-          padding: 0.5em 1em;
-          display: inline-block;
-          @media screen and (max-width: 40em) {
-            width: 100%;
-            text-align: center;
-            padding: 1em;
-            font-size: 1.2em;
-          }
-          &:hover{
-            color: $pure-white;
-            background-color: $signature-teal;
-            @media (prefers-color-scheme: dark) {
-              background-color: $signature-teal-dark;
-              border-color: $signature-teal-dark;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .pixels{
-    margin-bottom: 15em;
-    @media screen and (max-width: 40em) {
-      margin-bottom: 10em;
-    }
-    .full-bleed{
-      font-family: $zilla;
-      font-weight: $zilla-bold;
-      color: $navy-black;
-      white-space: nowrap;
-      text-align: center;
-      font-size: 16.5vw;
-      width: calc(100% + 3vw);
-      padding: 0;
-      margin: 0;
-      margin-left: -2vw;
-      line-height: 1.5em;
-      overflow: hidden;
-      @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
-      }
-    }
-    p{
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      font-size: 4em;
-      font-weight: $lato-light;
-      font-style: italic;
-      margin-top: -1em;
-      @media screen and (max-width: 64em) {
-        font-size: 2em;
-      }
-      @media screen and (max-width: 64em) {
-        margin-top: -0.5em;
-      }
-    }
-  }
-
   .shine-registry{
     margin-top: 15rem;
     margin-bottom: 6rem;
@@ -579,7 +124,7 @@
       -moz-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
       box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
       @media (prefers-color-scheme: dark) {
-        background-color: mix(#FFE6BA, $navy-black-dark, 10%);
+        background-color: mix(#FFE6BA, $navy-black, 10%);
       }
       @media screen and (max-width: 64em) {
         min-height: 40rem;
@@ -601,7 +146,7 @@
           a{
             color: $navy-black;
             @media (prefers-color-scheme: dark) {
-              color: $pure-white-dark;
+              color: $pure-white;
             }
           }
         }
@@ -672,195 +217,6 @@
     }
   }
 
-  .by-the-numbers{
-    margin-top: 20em;
-    margin-bottom: 10em;
-    @media screen and (max-width: 40em) {
-      margin-top: 15em;
-      margin-bottom: 7em;
-    }
-    h2{
-      font-size: 14vw;
-      line-height: 10vw;
-    }
-  }
-
-  .by-the-numbers-end{
-    h2, p{
-      font-family: $zilla;
-      text-align: center;
-      line-height: 0.9em;
-    }
-    h2{
-      font-size: 3em;
-      font-weight: $zilla-bold;
-      font-style: italic;
-      span{
-        font-size: 1.5em;
-      }
-    }
-    p{
-      font-size: 2em;
-      font-weight: $zilla-medium;
-      font-style: italic;
-      margin: 0;
-      padding: 0;
-    }
-  }
-
-  .music{
-    h2{
-      font-family: $montserrat;
-      font-weight: $montserrat-black;
-      font-size: 10vw;
-      line-height: 7vw;
-      @media screen and (max-width: 64em) {
-        font-size: 20vw;
-        line-height: 14vw;
-      }
-      .hrs{
-        font-weight: $montserrat-light;
-      }
-      .description{
-        font-size: 5vw;
-        display: block;
-        @media screen and (max-width: 64em) {
-          font-size: 12vw;
-          line-height: 0.8em;
-          margin-top: 0.2em;
-        }
-      }
-    }
-    h3{
-      font-family: $montserrat;
-      text-align: center;
-      font-weight: $montserrat-bold;
-      margin-top: 3em;
-      margin-bottom: 2em;
-    }
-    .song-container{
-      .song-tile{
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
-        @media screen and (max-width: 40em) {
-          margin-bottom: 2em;
-          padding-left: 0;
-          padding-right: 0;
-        }
-        img{
-          border-radius: 40px;
-          box-shadow: 0 0 50px 0 rgba($navy-black, 0.20);
-        }
-        .text-container{
-          margin-top: 0.5em;
-          font-family: $montserrat;
-          p{
-            margin: 0;
-            padding: 0;
-            @media screen and (max-width: 64em) {
-              font-size: 0.8em;
-            }
-            @media screen and (max-width: 40em) {
-              font-size: 1em;
-            }
-          }
-          .title{
-            font-weight: $montserrat-black;
-          }
-          .artist{
-            font-weight: $montserrat-bold;
-            display: inline-block;
-          }
-          .play-count{
-            font-weight: $montserrat-regular;
-            display: inline-block;
-            float: right;
-          }
-        }
-      }
-    }
-  }
-
-  .data-consumed{
-    margin-bottom: 10em;
-    .data-container{
-      font-family: $montserrat;
-      .title{
-        text-align: center;
-        margin-bottom: 4em;
-        h2{
-          font-size: 12vw;
-          font-family: $montserrat;
-          font-weight: $montserrat-black;
-          line-height: 12vw;
-          @media screen and (max-width: 64em) {
-            font-size: 16vw;
-            line-height: 16vw;
-          }
-        }
-        p{
-          font-size: 4vw;
-          font-weight: $montserrat-light;
-          padding: 0;
-          margin: 0;
-          margin-top: -2vw;
-          @media screen and (max-width: 64em) {
-            font-size: 5vw;
-            line-height: 5vw;
-          }
-        }
-      }
-      .calendar{
-        p{
-          margin: 0;
-          padding: 0;
-        }
-        .calendar-cell{
-          border: thick solid $pure-black;
-          border-radius: 30px;
-          overflow: hidden;
-          font-size: 2em;
-          @media (prefers-color-scheme: dark) {
-            border-color: $pure-white-dark;
-            background-color: $navy-black-muted;
-          }
-          @media screen and (max-width: 64em) {
-            font-size: 1.2em;
-          }
-          .header{
-            background-color: #CD0909;
-            color: $pure-white;
-            padding: 0.3em 0.6em;
-            @media (prefers-color-scheme: dark) {
-              background-color: #7C0A0A;
-              color: $pure-white-dark;
-            }
-          }
-          .body{
-            padding: 0.6em;
-            margin-top: 0.4em;
-            .number{
-              font-weight: $montserrat-black;
-              font-size: 2em;
-              line-height: 0.8em;
-              color: $pure-black;
-              @media (prefers-color-scheme: dark) {
-                color: $pure-white-dark;
-              }
-            }
-            .gig{
-              font-size: 0.7em;
-              color: $pure-black;
-              @media (prefers-color-scheme: dark) {
-                color: $pure-white-dark;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .duolingo{
     margin-top: 6em;
     margin-bottom: 3em;
@@ -884,11 +240,8 @@
         padding: 2rem;
       }
       .text{
-        font-family: $montserrat;
+        // font-family: $montserrat;
         color: $pure-white;
-        @media (prefers-color-scheme: dark) {
-          color: $pure-white-dark;
-        }
         p{
           padding: 0;
           margin: 0;
@@ -896,9 +249,9 @@
         .minutes, .words{
           font-size: 5em;
           line-height: 0.9em;
-          font-weight: $montserrat-light;
+          // font-weight: $montserrat-light;
           span{
-            font-weight: $montserrat-black;
+            // font-weight: $montserrat-black;
           }
           @media screen and (max-width: 40em) {
             font-size: 3em;
@@ -923,7 +276,7 @@
         .sentance{
           font-size: 2em;
           line-height: 1.2em;
-          font-weight: $montserrat-black;
+          // font-weight: $montserrat-black;
           margin-top: 0.5em;
           @media screen and (max-width: 40em) {
             font-size: 1.5em;
@@ -942,404 +295,6 @@
     }
   }
 
-  .site-analytics{
-    margin-bottom: 10em;
-    .title-container{
-      @media screen and (max-width: 64em) {
-        font-size: 0.8em;
-      }
-      font-family: $zilla;
-      margin-bottom: 5em;
-      p{
-        padding: 0;
-        margin: 0;
-        font-size: 3em;
-      }
-      h2{
-        font-weight: $zilla-bold;
-        font-size: 6em;
-        margin-top: -0.5em;
-        @media screen and (max-width: 64em) {
-          line-height: 0.8em;
-          margin-top: -0.2em;
-        }
-      }
-    }
-    .top-countries{
-      background-image: url(../img/world.svg);
-      @media (prefers-color-scheme: dark) {
-        background-image: url(../img/world-darkmode.svg);
-      }
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center;
-    }
-    .top-countries, .devices{
-      margin-bottom: 6em;
-      @media screen and (max-width: 64em) {
-        font-size: 0.8em;
-      }
-      h3{
-        text-align: center;
-        font-weight: $zilla-bold;
-        font-size: 3em;
-        @media screen and (max-width: 64em) {
-          line-height: 1em;
-        }
-      }
-      .device-container{
-        margin-top: 2em;
-      }
-      .country-container, .device-container{
-        text-align: center;
-        .country-wrapper, .device-wrapper{
-          display: inline-block;
-          text-align: right;
-        }
-        p{
-          padding: 0;
-          margin: 0;
-        }
-        .flag{
-          font-size: 3em;
-        }
-        .number-views, .percentage{
-          font-size: 6em;
-          font-weight: $lato-black;
-          margin-top: -0.5em;
-          margin-bottom: -0.4em;
-        }
-        .country-name, .device-type{
-          font-size: 2em;
-        }
-      }
-    }
-    .popular-project{
-      @media screen and (max-width: 64em) {
-        font-size: 0.6em;
-      }
-      border-radius: 40px;
-      padding: 1rem 1rem;
-      background-color: #F5F5F5;
-      margin-bottom: 3em;
-      -webkit-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      -moz-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      @media (prefers-color-scheme: dark) {
-        background-color: $navy-black-muted;
-      }
-      .photo-container{
-        border-radius: 40px - 14px;
-        overflow: hidden;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-            border-radius: 40px - 14px + 5px;
-            transform: scale(1.05) translate(1%);
-            transition: all 0.2s ease-in-out;
-            @media screen and (max-width: 40em) {
-              transform: scale(1.05) translateY(-1%);
-            }
-        }
-        @media screen and (max-width: 40em) {
-          margin-bottom: 2em;
-        }
-      }
-      .text{
-        text-align: right;
-        font-family: $zilla;
-        p{
-          margin: 0;
-          padding: 0;
-          font-size: 2em;
-          line-height: 1em;
-        }
-        .title{
-          font-weight: $zilla-bold;
-          font-size: 4em;
-        }
-      }
-    }
-    .total-views-container{
-      @media screen and (max-width: 64em) {
-        font-size: 2em;
-      }
-      @media screen and (max-width: 40em) {
-        font-size: 1.2em;
-        padding: 2em;
-      }
-      border-radius: 40px;
-      padding: 4rem 4rem;
-      background-color: $navy-black;
-      -webkit-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      -moz-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-
-      color: $pure-white;
-      font-family: $zilla;
-      font-size: 2.5em;
-      @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
-      }
-      .party{
-        font-size: 2em;
-        display: inline-block;
-      }
-      p{
-        padding: 0;
-        margin: 0;
-      }
-      h3{
-        font-family: $lato;
-        font-weight: $lato-black;
-        font-size: 4em;
-        margin-top: -0.3em;
-      }
-      .wow{
-        font-weight: $zilla-bold;
-      }
-      .thanks{
-        line-height: 1.2em;
-        margin-bottom: 0.5em;
-        font-weight: $zilla-light;
-      }
-      .come-back{
-        font-weight: $zilla-bold;
-        line-height: 1.2em;
-        font-size: 0.7em;
-      }
-    }
-  }
-
-  .slack-moji{
-    margin-top: 10em;
-    @media screen and (max-width: 64em) {
-      margin-top: 10em;
-    }
-    .slack-icon{
-      max-width: 210px;
-      @media screen and (max-width: 64em) {
-        max-width: 160px;
-      }
-      @media screen and (max-width: 40em) {
-        max-width: 100px;
-      }
-    }
-    .title-container{
-      margin-bottom: 2em;
-    }
-    .title{
-      font-family: $montserrat;
-      font-size: 4.4em;
-      margin-left: 0.3em;
-      @media screen and (max-width: 64em) {
-        font-size: 3em;
-      }
-      .most{
-        font-weight: $montserrat-light;
-        display: block;
-      }
-      .emoji{
-        font-weight: $montserrat-bold;
-        display: block;
-        margin-top: -1.0em;
-        color: rgba($navy-black,0.3);
-        @media (prefers-color-scheme: dark) {
-          color: rgba($pure-white-dark,0.3);
-        }
-      }
-    }
-    .emoji-container{
-      border-radius: 50%;
-      @media screen and (max-width: 64em) {
-        border-radius: 40px;
-      }
-      min-height: 16.9rem;
-      @media screen and (max-width: 64em) {
-        min-height: 0;
-        padding: 2em 0;
-      }
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img{
-        width: 8rem;
-        @media screen and (max-width: 64em) {
-          width: 4rem;
-        }
-      }
-      span{
-        font-size: 8rem;
-        @media screen and (max-width: 64em) {
-          font-size: 4rem;
-        }
-        @media (prefers-color-scheme: dark) {
-          opacity: 80%;
-        }
-      }
-    }
-    .thumbs-up{
-      background-color: #B9E98B;
-      @media (prefers-color-scheme: dark) {
-        background-color: mix(#B9E98B, $navy-black-dark, 40%);
-      }
-    }
-    .party-parrot{
-      background-color: #B5E0FE;
-      @media (prefers-color-scheme: dark) {
-        background-color: mix(#B5E0FE, $navy-black-dark, 40%);
-      }
-    }
-    .floor-laughing{
-      background-color: #F9F064;
-      @media (prefers-color-scheme: dark) {
-        background-color: mix(#F9F064, $navy-black-dark, 40%);
-      }
-    }
-    .hoppy-goat{
-      background-color: #F2C1FD;
-      @media (prefers-color-scheme: dark) {
-        background-color: mix(#F2C1FD, $navy-black-dark, 40%);
-      }
-    }
-  }
-
-  .memoji{
-    margin-top: 14em;
-    margin-bottom: 14em;
-    @media screen and (max-width: 64em) {
-      margin-top: 8em;
-    }
-    .wrapper{
-      align-items: center;
-    }
-    .bubble{
-      position: absolute;
-    }
-    .text-container{
-      position: relative;
-      .video{
-        top: -60%;
-        left: 20%;
-        @media screen and (max-width: 64em) {
-          top: -5%;
-          left: 5%;
-          opacity: 30%;
-        }
-      }
-      .chat{
-        right: 0;
-        bottom: -20%;
-        @media screen and (max-width: 64em) {
-          right: 5%;
-          opacity: 30%;
-        }
-      }
-    }
-    p{
-      font-family: $zilla;
-      font-weight: $zilla-medium;
-      font-size: 4em;
-      padding: 0;
-      line-height: 1em;
-      margin: 0;
-      z-index: 2;
-      position: relative;
-    }
-  }
-  .drone-photography{
-    margin-top: 15rem;
-    .title{
-      font-family: $zilla;
-      font-size: 3em;
-      padding: 0;
-      margin: 0;
-      line-height: 1em;
-      font-weight: $zilla-medium;
-      sup{
-        font-size: 0.3em;
-        top: -1.5em;
-      }
-    }
-    .drone{
-      filter: brightness(500%) saturate(50%);
-    }
-    .circle, .text, .left-col, .right-col{
-      margin-bottom: 0.9375rem*2;
-    }
-  }
-
-  .covid{
-    .opener{
-      text-align: center;
-      z-index: 3;
-
-      @media screen and (max-width: 64em) {
-        font-size: 0.7em;
-      }
-      img{
-        @media screen and (max-width: 64em) {
-          max-width: 50%;
-        }
-      }
-      h2{
-        margin-top: 1em;
-        font-size: 3em;
-        font-weight: $zilla-bold;
-        padding: 0 2em;
-        line-height: 1.2em;
-        @media screen and (max-width: 40em) {
-          padding: 0 0.5em;
-        }
-      }
-      p{
-        font-family: $zilla;
-        font-size: 1.5em;
-        text-align: left;
-        padding: 0 1em;
-        text-shadow: 0px 0px 10px rgba($pure-white,1), 0px 0px 20px rgba($pure-white,1),0px 0px 20px rgba($pure-white,1),0px 0px 20px rgba($pure-white,1),0px 0px 40px rgba($pure-white,1),0px 0px 60px rgba($pure-white,1),0px 0px 60px rgba($pure-white,1),0px 0px 80px rgba($pure-white,1);
-        @media (prefers-color-scheme: dark) {
-          text-shadow: 0px 0px 10px rgba($navy-black-dark,1), 0px 0px 20px rgba($navy-black-dark,1),0px 0px 20px rgba($navy-black-dark,1),0px 0px 20px rgba($navy-black-dark,1),0px 0px 40px rgba($navy-black-dark,1),0px 0px 60px rgba($navy-black-dark,1),0px 0px 60px rgba($navy-black-dark,1),0px 0px 80px rgba($navy-black-dark,1);
-        }
-        @media screen and (max-width: 40em) {
-          line-height: 1.2em;
-        }
-      }
-    }
-  }
-  .sash{
-    margin-bottom: 15em;
-    z-index: 2;
-    //TODO
-    // some new bug with Safari it seems
-    background-image: url(../img/felt-texture.jpg);
-    background-blend-mode: overlay;
-    background-color: #415B50;
-    @media (prefers-color-scheme: dark) {
-      background-color: darken(#415B50, 15%);
-    }
-    position: relative;
-    transform: rotate(12deg);
-    width: 150%;
-    left: -25%;
-    @media screen and (max-width: 40em) {
-      transform: rotate(0deg);
-      width: 100%;
-      left: 0;
-      margin-bottom: 6em;
-    }
-    &::before{
-      position: absolute;
-    }
-    .patch-container{
-      text-align: center;
-      transform: rotate(-12deg);
-      @media screen and (max-width: 40em) {
-        transform: rotate(0deg);
-        padding: 4em 0;
-      }
-
-    }
-  }
 
   .leveled-up{
     margin-top: 10em;
@@ -1356,9 +311,9 @@
     .words-container{
       padding: 0 2em;
       h2{
-        font-family: $montserrat;
+        // font-family: $montserrat;
         font-size: 8em;
-        font-weight: $montserrat-light;
+        // font-weight: $montserrat-light;
         @media screen and (max-width: 64em) {
           line-height: 0.8em;
           margin-top: 0.2em;
@@ -1366,8 +321,8 @@
         }
       }
       p{
-        font-family: $montserrat;
-        font-weight: $montserrat-light;
+        // font-family: $montserrat;
+        // font-weight: $montserrat-light;
         font-size: 2em;
         padding: 0;
         margin: 0;
@@ -1399,133 +354,17 @@
     }
   }
 
-  .lastly{
-    .full-bleed{
-      font-family: $zilla;
-      font-weight: $zilla-light;
-      color: rgba($navy-black, 0.15);
-      white-space: nowrap;
-      text-align: center;
-      font-size: 32vw;
-      width: calc(100% + 3vw);
-      padding: 0;
-      margin: 0;
-      margin-left: -3vw;
-      line-height: 1.5em;
-      overflow: hidden;
-      @media (prefers-color-scheme: dark) {
-        color: rgba($pure-white-dark, 0.30);
-      }
-    }
-    .lastly-grid-container{
-      margin-top: -20vw;
-      p{
-        margin: 0;
-        padding: 0;
-      }
-      .blurb{
-        text-align: center;
-        font-family: $zilla;
-        font-weight: $zilla-bold;
-        line-height: 1em;
-        font-size: 3em;
-        padding: 0 3.4em;
-        @media screen and (max-width: 64em) {
-          font-size: 2em;
-          padding: 0 2.5em;
-        }
-        @media screen and (max-width: 40em) {
-          font-size: 1.5em;
-          padding: 0 1em;
-        }
-      }
-      .emoji-container{
-        position: relative;
-        @media screen and (max-width: 64em) {
-          font-size: 0.7em;
-        }
-        @media screen and (max-width: 40em) {
-          font-size: 0.5em;
-        }
-        .emoji-left{
-          display: inline-block;
-          position: absolute;
-          top: -20vw;
-          left: 4vw;
-        }
-        .emoji{
-          font-size: 4em;
-          display: inline-block;
-          position: absolute;
-        }
-        .boom{
-          font-size: 6em;
-          transform: rotate(20deg);
-          left: 5vw;
-          @media screen and (max-width: 64em) {
-            top: -10vw;
-          }
-          @media screen and (max-width: 40em) {
-            top: -14vw;
-          }
-        }
-        .mask{
-          transform: rotate(-20deg);
-          top: 8vw;
-          @media screen and (max-width: 40em) {
-            top: 12vw;
-          }
-        }
-        .party{
-          transform: rotate(14deg);
-          right: 4vw;
-          top: -4vw;
-        }
-      }
-    }
-  }
-  .in-person{
-    margin-top: 12em;
-    p{
-      padding: 0;
-      margin: 0;
-      text-align: center;
-      font-family: $zilla;
-      font-weight: $zilla-medium;
-      font-size: 4em;
-      padding: 0 2em;
-      line-height: 1.2em;
-      @media screen and (max-width: 64em) {
-        font-size: 3em;
-        padding: 0 1em;
-      }
-      @media screen and (max-width: 40em) {
-        padding: 0 0.7em;
-        font-size: 2em;
-      }
-    }
-    .fingers-crossed{
-      margin-top: 1em;
-      @media screen and (max-width: 40em) {
-        margin-top: 0.5em;
-      }
-    }
-  }
-
   footer{
     background-image: url(../img/footergradient.jpg);
-    @media (prefers-color-scheme: dark) {
-      background-image: url(../img/footergradient-darkmode.jpg);
-    }
     background-repeat: no-repeat;
     background-size: cover;
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+    
     .logo{
       margin-top: -3.1em;
       float: right;
+      img{
+        height: 50px;
+      }
       @media screen and (max-width: 64em) {
         width: 6em;
       }
@@ -1540,9 +379,6 @@
       font-weight: $lato-thin;
       font-style: italic;
       line-height: 0.8em;
-      @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
-      }
       @media screen and (max-width: 64em) {
         font-size: 10em;
       }
@@ -1551,8 +387,6 @@
       }
     }
     .text-section{
-      margin-top: 10em;
-      margin-bottom: 10em;
       @media screen and (max-width: 64em) {
         margin-top: 3em;
         margin-bottom: 3em;
