@@ -1,10 +1,6 @@
 .year-twenty-one{
-  .page-content{
-    overflow-x: hidden;
-  }
   .year-in-review{
     margin-bottom: 0;
-    .nav-container{
       background: linear-gradient(120deg, rgba(247,152,104,1) 0%, rgba(241,95,99,1) 100%);
       @media (prefers-color-scheme: dark) {
         background: linear-gradient(120deg, mix(rgba(247,152,104,1), $pure-black, 50%) 0%, mix(rgba(241,95,99,1),$pure-black,50%) 100%);
@@ -16,8 +12,8 @@
           height: 50px;
         }
       }
-    }
-    .twenty-container{
+    
+    .twenty-one-container{
       margin-top: 2em;
       margin-bottom: 2em;
     }
