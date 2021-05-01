@@ -1,4 +1,4 @@
-.year-twenty{
+.year-twenty-one{
   .page-content{
     overflow-x: hidden;
   }
@@ -98,33 +98,6 @@
           text-align: center;
           margin-top: -25%;
         }
-      }
-    }
-  }
-
-  .black-lives-matter{
-    padding-top: 6em;
-    padding-bottom: 6em;
-    background-color: $pure-black;
-    @media (prefers-color-scheme: dark) {
-      background-color: $navy-black-muted;
-    }
-    h2, p{
-      color: $pure-white;
-      @media (prefers-color-scheme: dark) {
-        color: $pure-white-dark;
-      }
-    }
-    h2{
-      font-weight: $zilla-bold;
-      text-align: center;
-      font-size: 2.5em;
-    }
-    p{
-      font-size: 1.5em;
-      padding: 0;
-      @media screen and (max-width: 64em) {
-        line-height: 1.2em;
       }
     }
   }
