@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="382px" height="382px" viewBox="0 0 382 382" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 27</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B4EC51" offset="0%"></stop>
+            <stop stop-color="#429321" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#425368" offset="0%"></stop>
+            <stop stop-color="#1F2937" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F5515F" offset="0%"></stop>
+            <stop stop-color="#9F041B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2020-copy-7" transform="translate(-214.000000, -2475.000000)">
+            <g id="Group-35" transform="translate(90.000000, 2475.000000)">
+                <g id="Group-27" transform="translate(124.000000, 0.000000)">
+                    <rect id="Mask" fill="url(#linearGradient-1)" x="-1.42108547e-13" y="-1.42108547e-13" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-3" fill="url(#linearGradient-2)" x="-1.42108547e-13" y="130.910112" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-6" fill="url(#linearGradient-3)" x="-1.42108547e-13" y="260.747191" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy" fill="#1F2937" x="130.910112" y="-1.42108547e-13" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-4" fill="url(#linearGradient-3)" x="130.910112" y="130.910112" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-7" fill="#1F2937" x="130.910112" y="260.747191" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-2" fill="url(#linearGradient-4)" x="260.747191" y="-1.42108547e-13" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-5" fill="#1F2937" x="260.747191" y="130.910112" width="121.252809" height="121.252809" rx="20"></rect>
+                    <rect id="Mask-Copy-8" fill="url(#linearGradient-5)" x="260.747191" y="260.747191" width="121.252809" height="121.252809" rx="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

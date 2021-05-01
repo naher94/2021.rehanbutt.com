@@ -1,0 +1,63 @@
+<section class="site-analytics grid-container">
+  <div class="title-container">
+    <p>rehanbutt.com</p>
+    <h2>site analytics</h2>
+  </div>
+
+  <!-- countries -->
+  <div class="top-countries cell grid-x">
+    <div class="cell">
+      <h3>Countries with the most page views</h3>
+    </div>
+    {% assign country-list = "(🇺🇸|1038|United States),(🇨🇳|147|China),(🇩🇪|133|Germany),(🇨🇦|112|Canada),(🇮🇳|97|India),(🇳🇱|91|Netherlands)" | remove: "(" | remove: ")" | split: ',' %}
+
+    {% for country in country-list %}
+    {% assign each = country | split: '|' %}
+    <div class="cell small-6 medium-4 country-container">
+      <div class="country-wrapper">
+        <p class="flag">{{each[0]}}</p>
+        <p class="number-views">{{each[1]}}</p>
+        <p class="country-name">{{each[2]}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- devices -->
+  <div class="devices cell grid-x">
+    <div class="cell">
+      <h3>Device breakdown</h3>
+    </div>
+    {% assign device-list = "(🇺🇸|73%|Desktop),(🇨🇳|26%|Mobile),(🇩🇪|1%|Tablet)" | remove: "(" | remove: ")" | split: ',' %}
+
+    {% for device in device-list %}
+    {% assign each = device | split: '|' %}
+    <div class="cell small-6 medium-4 device-container">
+      <div class="device-wrapper">
+        <!-- <p class="flag">{{each[0]}}</p> -->
+        <p class="percentage">{{each[1]}}</p>
+        <p class="device-type">{{each[2]}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="cell grid-x popular-project">
+      <div class="cell small-12 medium-6 photo-container">
+        <a target="_blank" rel="noopener" href="https://rehanbutt.com/bowlingtable">
+          <img src="img/naildetail.jpg" alt="Bowling Table Nail Detail Photo">
+        </a>
+      </div>
+    <div class="text cell small-12 medium-6 align-self-middle">
+      <p>most popular project</p>
+      <p class="title">Bowling Table</p>
+      <p>918 views</p>
+    </div>
+  </div>
+  <div class="cell total-views-container">
+    <p class="party">🎉</p>
+    <h3>11,842</h3>
+    <p class="thanks"><span class="wow">Wow</span> that's a lot of page views. Thank you all for checking out my site! 🥳</p>
+    <p class="come-back">And don't forget to come back soon! 😉 New and exciting things on the horizon 🌅</p>
+  </div>
+</section>
