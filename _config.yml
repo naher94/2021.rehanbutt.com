@@ -9,7 +9,8 @@
 title: Rehan Butt
 email: me@rehanbutt.com
 description: > # this means to ignore newlines until "baseurl:"
-2021 Year in Review, Check back towards the end of the year for a look back at 2021
+  2021 Year in Review, Check back towards the end of the year for a look back at 2021
+
 baseurl: "" # the subpath of your site, e.g. /blog
 mainurl: "https://rehanbutt.com"
 url: "https://2021.rehanbutt.com" # the base hostname & protocol for your site
