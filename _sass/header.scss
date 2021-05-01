@@ -1,0 +1,36 @@
+header{
+  padding-bottom: 4em;
+  padding-top: 3em;
+  background: linear-gradient(120deg, #FBAA1D 0%, #FDD53E 100%);
+  .number{
+    font-family: $zilla;
+    font-weight: $zilla-bold;
+    font-size: 5.8rem;
+    line-height: 0.4;
+  }
+  .logo{
+    img{
+      height: 50px;
+    }
+  }
+  .twenty-one-container{
+    margin-top: 4em;
+    font-family: $zilla;
+    color: semantic-colors(text-color); //use semantic color function
+    h1{
+      font-weight: $zilla-medium;
+      font-size: 9rem;
+      span{
+        display: block;
+      }
+    }
+    h2{
+      position: absolute;
+      bottom: 3.5rem;
+      font-weight: $zilla-light;
+      font-size: 5rem;
+      font-style: italic;
+      letter-spacing: 2rem;
+    }
+  }
+}

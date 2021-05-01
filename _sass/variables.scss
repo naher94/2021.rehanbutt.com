@@ -164,20 +164,19 @@ $jog: all 0.50s ease-in-out;
 }
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 $zilla: 'Zilla Slab', serif;
 $zilla-light: 300;
 $zilla-regular: 400;
 $zilla-medium: 500;
+$zilla-semi-bold: 600;
 $zilla-bold: 700;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900i,900&display=swap');
 $lato: 'Lato', sans-serif;
 $lato-thin: 100;
-$lato-light-italic: 300i;
 $lato-regular: 400;
 $lato-bold: 700;
-$lato-bold-italic: 700i;
 $lato-black: 900;
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
