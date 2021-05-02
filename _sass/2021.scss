@@ -296,49 +296,5 @@
     }
   }
 
-  footer{
-    background-image: url(../img/footergradient.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    .logo{
-      margin-top: -3.1em;
-      float: right;
-      img{
-        height: 50px;
-      }
-      @media screen and (max-width: 64em) {
-        width: 6em;
-      }
-      @media screen and (max-width: 40em) {
-        width: 4em;
-      }
-    }
-    h2{
-      font-family: $lato;
-      color: $pure-white;
-      font-size: 18em;
-      font-weight: $lato-thin;
-      font-style: italic;
-      line-height: 0.8em;
-      @media screen and (max-width: 64em) {
-        font-size: 10em;
-      }
-      @media screen and (max-width: 40em) {
-        font-size: 6.4em;
-      }
-    }
-    .text-section{
-      @media screen and (max-width: 64em) {
-        margin-top: 3em;
-        margin-bottom: 3em;
-      }
-      @media screen and (max-width: 40em) {
-        margin-top: 5em;
-        margin-bottom: 5em;
-      }
-    }
-  }
-
 
 }
