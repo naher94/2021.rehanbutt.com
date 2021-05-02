@@ -26,8 +26,15 @@ footer{
     }
   }
   .logo{
-    img{
+    #rehan-logo-footer{
       height: 50px;
+      transition: $sprint;
+      &:hover{
+        transform: scale(1.1);
+      }
+      g{
+        fill:$pure-white; //Changes the color of my logo inline
+      }
     }
   }
   canvas{

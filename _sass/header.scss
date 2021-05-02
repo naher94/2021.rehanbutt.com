@@ -35,4 +35,16 @@ header{
       letter-spacing: 2rem;
     }
   }
+  .logo{
+    #rehan-logo-header{
+      height: 50px;
+      transition: $sprint;
+      &:hover{
+        transform: scale(1.1);
+      }
+      g{
+        fill:$navy-black; //Changes the color of my logo inline
+      }
+    }
+  }
 }
