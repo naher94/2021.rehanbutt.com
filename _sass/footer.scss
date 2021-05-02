@@ -8,6 +8,8 @@ footer{
     h2{
       font-weight: $zilla-medium;
       font-size: 9rem;
+      color: $pure-white; //TODO use sematic color
+      line-height: 0.8em;
       span{
         display: block;
       }
@@ -23,23 +25,13 @@ footer{
       line-height: 0.8;
     }
   }
-  canvas{
-    position: absolute;
-    z-index: -1;
-  }
-}
-
-
-footer{
-  
   .logo{
     img{
       height: 50px;
     }
   }
-  h2{
-    color: $pure-white;
-    font-size: 18em;
-    line-height: 0.8em;
+  canvas{
+    position: absolute;
+    z-index: -1;
   }
 }
