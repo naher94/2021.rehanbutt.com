@@ -4,6 +4,9 @@
     border-radius: $tile-radius-big;
     padding: 3rem;
     margin-top: 10rem;
+    @include breakpoint(small only){
+      margin-top: 7rem;
+    }
     p{
       padding: 0;
       margin: 0;
@@ -32,6 +35,11 @@
     .image-container{
       margin-top: -10rem;
       margin-bottom: 2rem;
+      @include breakpoint(small only){
+        max-width: 50%;
+        margin-top: -7rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
