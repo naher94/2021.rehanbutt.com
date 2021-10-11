@@ -1,0 +1,85 @@
+.website{
+  background-color: semantic-color(joined-card-bg);
+  border-radius: $tile-radius-big;
+  padding: 0 3rem;
+  .elderberry-card{
+    background: url('/img/elderberry-texture.png') repeat, linear-gradient(45deg,#ED5D6B, #571A9D);
+    background-blend-mode: color-burn;
+    border-radius: $tile-radius-big;
+    text-align: center;
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+    h2,h3{
+      font-family: $caveat;
+      color: $pure-white;
+    }
+    h2{
+      font-weight: bold;
+      font-size: 12rem;
+      line-height: 0.6;
+      margin-top: 4rem;
+    }
+    h3{
+      font-size: 3rem;
+    }
+    .icon-wrapper{
+      margin-top: 2rem;   
+      .feature-icon-container{
+        background-color: rgba($pure-white,0.2);
+        border-radius: $pill-radius;
+        max-width: 130px;
+        aspect-ratio: 1/1;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        i{
+          color: $pure-white;
+        }
+      }
+    }
+    .elderflower{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 30%;
+    }
+    .elderflower-left{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .elderflower-right{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  .home-sweet-home{
+    position: relative;
+    overflow: hidden;
+    border-radius: $tile-radius-big;
+    text-align: center;
+    .content{
+      padding: 6rem;
+      padding-top: 4rem;
+      position: absolute;
+    }
+    h2,h3{
+      font-family: $caveat;
+      background: -webkit-linear-gradient(45deg,#ED5D6B, #571A9D);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2{
+      font-weight: $caveat-bold;
+      font-size: 8rem;
+    }
+    h3{
+      padding-left: 8rem;
+      padding-right: 8rem;
+      line-height: 0.8;
+      // TODO fix line height clipping issue for the Y
+    }
+  }
+}
