@@ -1,8 +1,10 @@
 .website{
   background-color: semantic-color(joined-card-bg);
-  border-radius: $tile-radius-big;
+  border-radius: 50px;
   padding: 3rem;
+  margin-block-start: 40em;
   .elderberry-card{
+    margin-block-start: -20em;
     background: url('/img/elderberry-texture.png') repeat, linear-gradient(45deg,#ED5D6B, #571A9D);
     background-blend-mode: color-burn;
     border-radius: $tile-radius-big;
@@ -80,6 +82,51 @@
       padding-right: 8rem;
       line-height: 0.8;
       // TODO fix line height clipping issue for the Y
+    }
+  }
+  .hero-card{
+    background-color: semantic-color(hero-card-bg);
+    color: semantic-color(text-inverted);
+    border-radius: $tile-radius-big;
+    position: relative;
+    margin-bottom: 0;
+    .text-content{
+      padding: 4rem;
+    }
+    h3{
+      font-family: $zilla;
+      font-weight: $zilla-bold;
+      font-size: 5em;
+      line-height: 0.8;
+      margin-bottom: 0.5em;
+    }
+    .description{
+      font-size: 2em;
+      line-height: 1.2;
+      padding: 0;
+      margin: 0;
+    }
+    .easter-egg{
+      font-family: $caveat;
+      font-size: 1.5em;
+      line-height: 1.2;
+      padding: 0;
+      margin: 0;
+      img{
+        display: none;
+        position: absolute;
+        bottom: 4em;
+        left: 4em;
+        border-radius: $tile-radius;
+        transform: rotate(7deg) scale(0.8);
+        box-shadow: $recessed-shadow $pure-black;
+      }
+      &:hover{
+        cursor: pointer;
+        img{
+          display: block;
+        }
+      }
     }
   }
 }
