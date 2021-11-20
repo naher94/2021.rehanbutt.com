@@ -1,7 +1,7 @@
 .website{
   background-color: semantic-color(joined-card-bg);
   border-radius: $tile-radius-big;
-  padding: 0 3rem;
+  padding: 3rem;
   .elderberry-card{
     background: url('/img/elderberry-texture.png') repeat, linear-gradient(45deg,#ED5D6B, #571A9D);
     background-blend-mode: color-burn;

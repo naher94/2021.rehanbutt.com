@@ -1,0 +1,72 @@
+.events{
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  .dots{
+    position: absolute;
+    width: 100vw;
+    z-index: 0;
+    margin-top: 5rem;
+  }
+  .text-container{
+    z-index: 1;
+    position: relative;
+  }
+  h2{
+    text-align: center;
+    font-family: $zilla;
+    font-weight: $zilla-bold;
+    font-size: 8rem;
+    position: relative;
+    span{
+      font-family: $caveat;
+      font-weight: $caveat-bold;
+      &.left{
+        font-size: 0.8em;
+        position: absolute;
+        transform: rotate(-10deg);
+        left: -12rem;
+        top: -6rem;
+      }
+      &.right-one{
+        font-size: 0.5em;
+        position: absolute;
+        transform: rotate(15deg);
+        right: -8rem;
+        top: -1rem;
+      }
+      &.right-two{
+        font-size: 0.3em;
+        position: absolute;
+        transform: rotate(-18deg);
+        right: -12rem;
+        top: -3rem;
+      }
+    }
+  }
+  p{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .logo-container{
+    z-index: 1;
+    position: relative;
+    .cell{
+      // padding: 1rem;
+      img{
+        max-width: 300px;
+        @media (prefers-color-scheme: dark){
+          filter: brightness(1000%) grayscale(80%);
+        }
+        &.ces{
+          @media (prefers-color-scheme: dark){
+            filter: brightness(240%) grayscale(80%);
+          }
+        }
+      }
+    }
+  }
+}
