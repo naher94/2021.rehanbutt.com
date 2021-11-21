@@ -1,0 +1,69 @@
+body, html {
+  overflow-x: hidden;
+}
+
+.film{
+  padding: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.punch-container{
+  display: inline-flex;
+  justify-content: space-between;
+  min-height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  .punch{
+    background-color: white;
+    width: 10%;
+    border-radius: 10px;
+  }
+}
+
+.trigger {
+  position: absolute;
+  &--one {
+    left: 0;
+  }
+}
+
+ .scene {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-5deg);
+    &--active {
+      position: fixed;
+    }
+    &--ended {
+      position: absolute;
+      bottom: 0;
+      top: auto;
+    }
+  }
+
+.horizontal-scroll-section {
+  position: relative;
+  background-color: silver;
+  &__content {
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      position: relative;
+      background: lightgreen;
+    }
+    &-section {
+      padding: 1rem 2rem;
+      min-width: 40vw;
+      background: black;
+    }
+  }
+}
