@@ -1,23 +1,55 @@
-<section class="leveled-up grid-container">
-  <div class="grid-x">
+{% assign left-skills = "Design Ops,Project Management,Systems Design,Mentoring,Process Design,Remote Research" | split: ',' %}
 
-    https://codepen.io/naher94/pen/NWppXby?editors=1100
-    
-    <div class="cell small-12 medium-shrink icon-container">
-      <img src="img/leveled-up.svg" alt="Up Arrow">
-    </div>
-    <div class="cell small-12 medium-auto words-container">
-      <h2>leveled up</h2>
-      <p>leveled up a bunch more skills this year</p>
+{% assign right-skills = "Design Ops,Project Management,Systems Design,Mentoring,Process Design,Remote Research" | split: ',' %}
+
+<section class="leveled-up grid-container">
+  <div class="grid-x align-middle">
+    <div class="cell small-12 medium-auto left-skills">
       <div class="pill-container">
-        <div class="pill">Design Ops</div>
-        <div class="pill">Project Management</div>
-        <div class="pill">Systems Design</div>
-        <div class="pill">Mentoring</div>
-        <div class="pill">Process Design</div>
-        <div class="pill">Remote Research</div>
+        {%- for skill in left-skills -%}
+          <div class="pill">{{skill}}</div>
+        {%- endfor -%}
         <div class="pill special">and many more!</div>
       </div>
+    </div>  
+    <div class="cell small-12 medium-shrink icon-container">
+      <div class="shape-animation">
+        <span class="large-shapes">
+          <div class="large circle one"></div>
+          <div class="large circle two"></div>
+          <div class="large circle three"></div>
+          <div class="large circle four"></div>
+          <div class="large circle five"></div>
+          <div class="large circle six"></div>
+          <div class="large circle seven"></div>
+          <div class="large circle eight"></div>
+        </span>
+        <span class="small-shapes">
+          <div class="small circle one"></div>
+          <div class="small square two"></div>
+          <div class="small circle three"></div>
+          <div class="small square four"></div>
+          <div class="small circle five"></div>
+          <div class="small square six"></div>
+          <div class="small circle seven"></div>
+          <div class="small square eight"></div>
+        </span>
+        <span class="middle-circle">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </div>
+    </div>
+    <div class="cell small-12 medium-auto right-skills">
+      <div class="pill-container">
+        {%- for skill in right-skills -%}
+          <div class="pill">{{skill}}</div>
+        {%- endfor -%}
+        <div class="pill special">and many more!</div>
+      </div>
+    </div>
+    <div class="cell align-center text-container">
+      <h2>leveled up</h2>
+      <p>leveled up a bunch more skills this year</p>
     </div>
   </div>
 </section>
