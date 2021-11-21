@@ -1,0 +1,72 @@
+.music{
+  h2{
+    font-family: $montserrat;
+    font-weight: $montserrat-black;
+    font-size: 10vw;
+    line-height: 7vw;
+    @media screen and (max-width: 64em) {
+      font-size: 20vw;
+      line-height: 14vw;
+    }
+    .hrs{
+      font-weight: $montserrat-light;
+    }
+    .description{
+      font-size: 5vw;
+      display: block;
+      @media screen and (max-width: 64em) {
+        font-size: 12vw;
+        line-height: 0.8em;
+        margin-top: 0.2em;
+      }
+    }
+  }
+  h3{
+    font-family: $montserrat;
+    text-align: center;
+    font-weight: $montserrat-bold;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+  .song-container{
+    .song-tile{
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      @media screen and (max-width: 40em) {
+        margin-bottom: 2em;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      img{
+        border-radius: 40px;
+        box-shadow: 0 0 50px 0 rgba($navy-black, 0.20);
+      }
+      .text-container{
+        margin-top: 0.5em;
+        font-family: $montserrat;
+        p{
+          margin: 0;
+          padding: 0;
+          @media screen and (max-width: 64em) {
+            font-size: 0.8em;
+          }
+          @media screen and (max-width: 40em) {
+            font-size: 1em;
+          }
+        }
+        .title{
+          font-weight: $montserrat-black;
+        }
+        .artist{
+          font-weight: $montserrat-bold;
+          display: inline-block;
+        }
+        .play-count{
+          font-weight: $montserrat-regular;
+          display: inline-block;
+          float: right;
+        }
+      }
+    }
+  }
+}
