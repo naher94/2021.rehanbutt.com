@@ -190,6 +190,9 @@
   }
   .left-skills{
     text-align: right;
+    @include breakpoint(small only){
+      text-align: left;
+    }
   }
   .right-skills, .left-skills{
     padding: 0 1em;
