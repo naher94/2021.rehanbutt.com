@@ -2,6 +2,23 @@ body, html {
   overflow-x: hidden;
 }
 
+.movie{
+  position: relative;
+  .popcorn{
+    position: absolute;
+    &-1{
+      right: 0;
+      bottom: -6em;
+      width: 10em;
+    }
+    &-2{
+      left: -6em;
+      top: -4em;
+      width: 8em;
+    }
+  }
+}
+
 .film{
   padding: 1rem;
   border-radius: 20px;
@@ -95,6 +112,7 @@ body, html {
       padding: 1rem 2rem;
       min-width: 40vw;
       background: $pure-black;
+      box-shadow: $pure-black $recessed-shadow;
     }
   }
 }
