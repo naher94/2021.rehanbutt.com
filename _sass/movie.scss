@@ -11,7 +11,22 @@ body, html {
   &.feature-number{
     background: linear-gradient(-45deg,#A5FF36,#33D5FF);
     font-family: $big-shoulders;
-    margin: auto;
+    // margin: auto;
+    p{
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-size: 4em;
+    }
+    .number{
+      font-weight: $big-shoulders-black;
+      font-size: 9em;
+    }
+  }
+  &.rewatch{
+    background: linear-gradient(180deg,#D10000,#480000);
+    font-family: $big-shoulders;
+    color: $pure-white;
     p{
       margin: 0;
       padding: 0;
