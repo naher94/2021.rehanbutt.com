@@ -133,6 +133,36 @@ body, html {
       }
     }
   }
+  &.first-watched{
+    font-family: $big-shoulders;
+    background: linear-gradient(180deg,#090F1B,#0F3774);
+    color: $pure-white;
+    padding: 2rem;
+    h2{
+      font-family: $big-shoulders;
+      font-size: 4.5em;
+      line-height: 1;
+      span{
+        font-weight: $big-shoulders-black;
+      }
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      font-size: 2.5em;
+    }
+    .poster-wrapper{
+      position: relative;
+    }
+    .poster{
+      border-radius: $tile-radius;
+      box-shadow: $recessed-shadow $pure-black;
+      position: absolute;
+      max-width: 100%;
+      transform: rotate(4deg);
+      bottom: -15%;
+    }
+  }
 }
 
 .punch-container{
