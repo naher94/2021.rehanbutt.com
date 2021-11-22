@@ -6,7 +6,7 @@ body, html {
   position: relative;
   .popcorn{
     position: absolute;
-    z-index: 2;
+    z-index: 2; 
     &-1{
       right: 0;
       bottom: -6em;
@@ -16,6 +16,11 @@ body, html {
       left: -6em;
       top: -4em;
       width: 8em;
+    }
+    &-3{
+      right: -3em;
+      top: -3em;
+      width: 10em;
     }
   }
   .movie-ticket{
@@ -52,6 +57,15 @@ body, html {
     background: linear-gradient(180deg,#D10000,#480000);
     font-family: $big-shoulders;
     color: $pure-white;
+    position: relative;
+    overflow: hidden;
+    .fas{
+      position: absolute;
+      top: 0.5rem;
+      right: -6rem;
+      font-size: 20em;
+      opacity: 20%;
+    }
     p{
       margin: 0;
       padding: 0;
@@ -61,6 +75,62 @@ body, html {
     .number{
       font-weight: $big-shoulders-black;
       font-size: 9em;
+    }
+  }
+  &.infinity-saga{
+    background: linear-gradient(-45deg,rgba(#12131F,0.8),rgba(#2C1141,0.8),rgba(#04055D,0.8)), url("/img/comic-pattern.png") no-repeat center center;
+    background-size: cover;
+    font-family: $big-shoulders;
+    color: $pure-white;
+    text-align: center;
+    h2{
+      font-family: $big-shoulders;
+      font-weight: $big-shoulders-black;
+      font-size: 5em;
+      line-height: 1;
+      span{
+        display: block;
+        font-size: 0.5em;
+        font-weight: $big-shoulders-regular;
+        line-height: 1;
+        letter-spacing: 0.05em;
+      }
+    }
+    .dots{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      div{
+        aspect-ratio: 1/1;
+        width: 15px;
+        border-radius: $pill-radius;
+        &:nth-of-type(1){
+          background-color: #00CA05;
+        }
+        &:nth-of-type(2){
+          background-color: #D51FFF;
+        }
+        &:nth-of-type(3){
+          background-color: #0881B8;
+        }
+        &:nth-of-type(4){
+          background-color: #FF141E;
+        }
+        &:nth-of-type(5){
+          background-color: #FF9600;
+        }
+        &:nth-of-type(6){
+          background-color: #FFD500;
+        }
+      }
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
+      font-size: 1.5em;
+      span{
+        font-weight: $big-shoulders-black;
+      }
     }
   }
 }
@@ -101,6 +171,11 @@ body, html {
       bottom: 0;
       top: auto;
     }
+    // .overflow{
+    //   position: absolute;
+    //   right: -40vw;
+    //   top: 0;
+    // }
   }
 
 .horizontal-scroll-section {
@@ -119,7 +194,8 @@ body, html {
     &-section {
       position: relative;
       padding: 1rem 2rem;
-      min-width: 40vw;
+      // min-width: 40vw;
+      min-width: 40rem;
       background: $pure-black;
       box-shadow: $pure-black $recessed-shadow;
     }
