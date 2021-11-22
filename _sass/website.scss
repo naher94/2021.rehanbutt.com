@@ -15,12 +15,15 @@
     h2,h3{
       font-family: $caveat;
       color: $pure-white;
+      position: relative;
+      z-index: 2;
     }
     h2{
       font-weight: bold;
       font-size: 12rem;
       line-height: 0.6;
       margin-top: 4rem;
+      text-shadow: 0 0 1em $pure-black;
     }
     h3{
       font-size: 3rem;
