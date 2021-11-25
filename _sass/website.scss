@@ -87,6 +87,60 @@
       // TODO fix line height clipping issue for the Y
     }
   }
+  .bio, .speed, .filed-away{
+    border-radius: $tile-radius-big;
+    padding: 3rem;
+  }
+  .bio{
+    background: linear-gradient(-45deg,#5D19A7,#D940B6);
+    color: $pure-white;
+    h2{
+      font-weight: $zilla-bold;
+    }
+    p{
+      font-family: $caveat;
+      padding: 0;
+      margin: 0;
+      font-size: 2em;
+      line-height: 1;
+    }
+  }
+  .speed{
+    // padding: 2rem 2rem;
+    color: $pure-white;
+    background: url(../img/speed-stripes.svg), linear-gradient(45deg, rgba(241,206,0,1) 0%, rgba(255,161,0,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-family: $zilla;
+    font-weight: $zilla-bold;
+    @media (prefers-color-scheme: dark) {
+      color: $pure-white;
+      background: url(../img/speed-stripes-darkmode.svg), linear-gradient(45deg, darken(rgba(241,206,0,1),30%) 0%, darken(rgba(255,161,0,1), 30%) 100%);
+
+    }
+    span{
+      display: block;
+    }
+    @media screen and (max-width: 64em) {
+      font-size: 2.3em;
+      line-height: 2.3rem;
+    }
+  }
+  .filed-away{
+    background-color: $pure-white;
+    h2{
+      font-weight: $zilla-bold;
+    }
+    p{
+      font-family: $caveat;
+      padding: 0;
+      margin: 0;
+      font-size: 2em;
+      line-height: 1;
+    }
+  }
   .hero-card{
     background-color: semantic-color(hero-card-bg);
     color: semantic-color(text-inverted);
