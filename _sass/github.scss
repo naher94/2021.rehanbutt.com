@@ -1,7 +1,9 @@
 .github{
   background-color: $navy-black-d6;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
   .box-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -55,8 +57,10 @@
     .code-reviews{
       // background-color: #F2994A;
       background-color: #BF3889;
-      grid-column: 10 / 12;
-      grid-row: 1 / 3;
+      // grid-column: 10 / 12;
+      // grid-row: 1 / 3;
+      grid-column: 11 / 13;
+      grid-row: 3 / 5;
     }
     .issues{
       background-color: #2EA44E;
@@ -114,6 +118,26 @@
           padding: 0;
           margin: 0;
           line-height: 1;
+        }
+        .link-wrapper{
+          margin-bottom: 0.5em;
+          a{
+            &:hover{
+              .metadata{
+                background-color: #8250DF;
+              }
+            }
+            .metadata{
+              font-weight: $source-code-bold;
+              color: $pure-white;
+              border-radius: $pill-radius;
+              padding-inline-end: 0.3em;
+              transition: $sprint;
+              p{
+                margin-left: 0.25em;
+              }
+            }
+          }
         }
       }
     }
@@ -186,6 +210,7 @@
           padding: 0;
           text-align: right;
           line-height: 1;
+          font-weight: $source-code-bold;
           &:not(:last-of-type){
             margin-bottom: 1em;
           }
