@@ -3,8 +3,14 @@ footer{
   padding: 15rem 0;
   color: semantic-color(text-inverted);
   font-family: $zilla;
+  @include breakpoint(small only){
+    padding: 8rem 0;
+  }
   .text-section{
     z-index: 2;
+    @include breakpoint(small only){
+      text-align: right;
+    }
     h2{
       font-weight: $zilla-medium;
       font-size: 9rem;
@@ -12,6 +18,9 @@ footer{
       line-height: 0.8em;
       span{
         display: block;
+      }
+      @include breakpoint(small only){
+        font-size: 4rem;
       }
     }
     p{
@@ -23,6 +32,10 @@ footer{
       font-style: italic;
       letter-spacing: 2rem;
       line-height: 0.8;
+      @include breakpoint(small only){
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+      }
     }
   }
   .logo{
@@ -34,6 +47,11 @@ footer{
       }
       g{
         fill:$pure-white; //Changes the color of my logo inline
+      }
+      @include breakpoint(small only){
+        height: 40px;
+        margin-top: 4rem;
+        padding-right: 0.5rem;
       }
     }
   }
