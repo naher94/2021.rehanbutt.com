@@ -205,14 +205,23 @@
         }
       }
       .repo-list{
-        p{
-          margin: 0;
-          padding: 0;
+        .link-wrapper{
           text-align: right;
-          line-height: 1;
-          font-weight: $source-code-bold;
           &:not(:last-of-type){
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
+          }
+          a{
+            color: $pure-white;
+            margin: 0;
+            padding: 0.25em 0.4em;
+            border-radius: 10px;
+            text-align: right;
+            line-height: 1;
+            font-weight: $source-code-bold;
+            transition: $sprint;
+            &:hover{
+              background-color: rgba($pure-white,0.2);
+            }
           }
         }
       }
