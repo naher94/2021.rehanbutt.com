@@ -3,6 +3,10 @@
   border-radius: 50px;
   padding: 3rem;
   margin-block-start: 40em;
+  @include breakpoint(small only){
+    padding: 1rem;
+    margin-block-start: 28em;
+  }
   .elderberry-card{
     margin-block-start: -20em;
     background: url('/img/elderberry-texture.png') repeat, linear-gradient(45deg,#ED5D6B, #571A9D);
@@ -12,6 +16,16 @@
     padding: 4rem;
     position: relative;
     overflow: hidden;
+    @include breakpoint(small only){
+      padding: 2rem 1rem;
+    }
+    .rocket-icon{
+      position: relative;
+      z-index: 2;
+      @include breakpoint(small only){
+        width: 2.5rem;
+      }
+    }
     h2,h3{
       font-family: $caveat;
       color: $pure-white;
@@ -24,9 +38,16 @@
       line-height: 0.6;
       margin-top: 4rem;
       text-shadow: 0 0 1em $pure-black;
+      @include breakpoint(small only){
+        font-size: 4rem;
+        margin-top: 1rem;
+      }
     }
     h3{
       font-size: 3rem;
+      @include breakpoint(small only){
+        font-size: 1.5rem;
+      }
     }
     .icon-wrapper{
       margin-top: 2rem;   
@@ -53,11 +74,19 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      @include breakpoint(small only){
+        bottom: -15rem;
+        left: -5rem;
+      }
     }
     .elderflower-right{
       position: absolute;
       bottom: 0;
       right: 0;
+      @include breakpoint(small only){
+        bottom: -15rem;
+        right: -5rem;
+      }
     }
   }
   .home-sweet-home{
@@ -69,6 +98,9 @@
       padding: 6rem;
       padding-top: 4rem;
       position: absolute;
+      @include breakpoint(small only){
+        padding: 1rem;
+      }
     }
     h2,h3{
       font-family: $caveat;
@@ -79,12 +111,21 @@
     h2{
       font-weight: $caveat-bold;
       font-size: 8rem;
+      @include breakpoint(small only){
+        font-size: 2rem;
+      }
     }
     h3{
       padding-left: 8rem;
       padding-right: 8rem;
       line-height: 0.8;
       // TODO fix line height clipping issue for the Y
+      @include breakpoint(small only){
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 1.5rem;
+        text-shadow: 0 0 1em $pure-white;
+      }
     }
   }
   .bio, .speed, .filed-away{
@@ -149,6 +190,9 @@
     margin-bottom: 0;
     .text-content{
       padding: 4rem;
+      @include breakpoint(small only){
+        padding: 2rem;
+      }
     }
     h3{
       font-family: $zilla;
@@ -156,12 +200,19 @@
       font-size: 5em;
       line-height: 0.8;
       margin-bottom: 0.5em;
+      @include breakpoint(small only){
+        font-size: 3em;
+        margin-bottom: 0.25em;
+      }
     }
     .description{
       font-size: 2em;
       line-height: 1.2;
       padding: 0;
       margin: 0;
+      @include breakpoint(small only){
+        font-size: 1.5em;
+      }
     }
     .easter-egg{
       font-family: $caveat;
@@ -170,7 +221,9 @@
       padding: 0;
       margin: 0;
       border-radius: 10px;
-      // display: inline-block;
+      @include breakpoint(small only){
+        margin-top: 0.5em;
+      }
       img{
         display: none;
         position: absolute;
@@ -179,6 +232,10 @@
         border-radius: $tile-radius;
         transform: rotate(7deg) scale(0.8);
         box-shadow: $recessed-shadow $pure-black;
+        @include breakpoint(small only){
+          bottom: 2em;
+          left: 0.1em;
+        }
       }
       &:hover{
         cursor: pointer;
