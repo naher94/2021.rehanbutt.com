@@ -191,14 +191,13 @@
   }
   .left-skills{
     text-align: right;
-    @include breakpoint(small only){
-      text-align: left;
-    }
   }
   .right-skills, .left-skills{
     padding: 0 1em;
+    @include breakpoint(small only){
+      text-align: center;
+    }
     .pill-container{
-      // margin-top: 0.5em;
       .pill{
         font-size: 1em;
         color: $pure-white;
@@ -219,12 +218,18 @@
   .text-container{
     text-align: center;
     margin-top: 1em;
+    @include breakpoint(small only){
+      margin-bottom: 1em;
+    }
     h2{
       font-family: $montserrat;
       font-weight: $montserrat-light;
       font-size: 7em;
       margin-bottom: 0;
       line-height: 1;
+      @include breakpoint(small only){
+        font-size: 5em;
+      }
     }
     p{
       font-family: $montserrat;
