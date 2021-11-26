@@ -8,31 +8,33 @@ header{
     font-weight: $zilla-bold;
     font-size: 5.8rem;
     line-height: 0.4;
-  }
-  .logo{
-    img{
-      height: 50px;
+    @include breakpoint(small only){
+      font-size: 3.5rem;
     }
   }
   .twenty-one-container{
     margin-top: 4em;
     font-family: $zilla;
-    color: semantic-color(text-color); //use semantic color function
+    color: semantic-color(text-color);
     h1{
       font-weight: $zilla-medium;
       font-size: 9rem;
-      span{
-        // display: block;
+      @include breakpoint(small only){
+        font-size: 4rem;
       }
     }
     h2{
       position: absolute;
-      // bottom: 3.5rem;
       margin-top: 1.1rem;
       font-weight: $zilla-light;
       font-size: 5rem;
       font-style: italic;
       letter-spacing: 2rem;
+      @include breakpoint(small only){
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+        margin-top: 2.4rem;
+      }
     }
   }
   .logo{
@@ -44,6 +46,9 @@ header{
       }
       g{
         fill:$navy-black; //Changes the color of my logo inline
+      }
+      @include breakpoint(small only){
+        height: 30px;
       }
     }
   }
