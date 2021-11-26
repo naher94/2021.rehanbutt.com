@@ -6,6 +6,7 @@
     margin-top: 10rem;
     @include breakpoint(small only){
       margin-top: 7rem;
+      padding: 2rem;
     }
     p{
       padding: 0;
@@ -36,7 +37,7 @@
       margin-top: -10rem;
       margin-bottom: 2rem;
       @include breakpoint(small only){
-        max-width: 50%;
+        max-width: 40%;
         margin-top: -7rem;
         margin-bottom: 1rem;
       }
