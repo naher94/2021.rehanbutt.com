@@ -194,6 +194,10 @@ body, html {
     background-color: $pure-white;
     width: 10%;
     border-radius: 10px;
+    @media (prefers-color-scheme: dark) {
+      background-color: #06080C;
+      box-shadow: $pure-white 0px 0px 25px -10px inset;
+    }
   }
 }
 
@@ -245,9 +249,24 @@ body, html {
       // min-width: 40vw;
       min-width: 40rem;
       background: $pure-black;
-      box-shadow: $pure-black $recessed-shadow;
+      &:before{
+        position: absolute;
+        content: '';
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: $pure-black $recessed-shadow;
+        @media (prefers-color-scheme: dark) {
+          box-shadow: $pure-white 0px 0px 40px -10px;
+        }
+      }
       &:last-of-type{
         border-radius: 0 40px 40px 0;
+        &:before{
+          border-radius: 0 40px 40px 0;
+        }
       }
     }
   }
