@@ -1,7 +1,7 @@
 footer{
   position: relative;
   padding: 15rem 0;
-  color: semantic-color(text-inverted);
+  color: $pure-white;
   font-family: $zilla;
   @include breakpoint(small only){
     padding: 8rem 0;
@@ -14,7 +14,7 @@ footer{
     h2{
       font-weight: $zilla-medium;
       font-size: 9rem;
-      color: $pure-white; //TODO use sematic color
+      color: $pure-white;
       line-height: 0.8em;
       span{
         display: block;

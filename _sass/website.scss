@@ -131,6 +131,9 @@
   .bio, .speed, .filed-away{
     border-radius: $tile-radius-big;
     padding: 3rem;
+    .square-tile{
+      aspect-ratio: 1/1;
+    }
   }
   .bio{
     background: linear-gradient(-45deg,#5D19A7,#D940B6);
