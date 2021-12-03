@@ -41,6 +41,13 @@
         margin-top: -7rem;
         margin-bottom: 1rem;
       }
+      @media (prefers-color-scheme: dark) {
+        img{
+          &.adplist-img{
+            filter: invert(100%);
+          }
+        }
+      }
     }
   }
 }
