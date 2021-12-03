@@ -3,6 +3,9 @@ header{
   padding-top: 3em;
   background: linear-gradient(120deg, #FBAA1D 0%, #FDD53E 100%);
   position: relative;
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(120deg, #b87a10 0%, #c2a12b 100%);
+  }
   .number{
     font-family: $zilla;
     font-weight: $zilla-bold;
@@ -45,7 +48,7 @@ header{
         transform: scale(1.1);
       }
       g{
-        fill:$navy-black; //Changes the color of my logo inline
+        fill:semantic-color(logo-header); //Changes the color of my logo inline
       }
       @include breakpoint(small only){
         height: 30px;
