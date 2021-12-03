@@ -102,7 +102,7 @@
         padding: 1rem;
       }
     }
-    h2,h3{
+    h2,h3{ //TODO not working with the image filter as a sibling
       font-family: $caveat;
       background: -webkit-linear-gradient(45deg,#ED5D6B, #571A9D);
       -webkit-background-clip: text;
@@ -138,6 +138,9 @@
   .bio{
     background: linear-gradient(-45deg,#5D19A7,#D940B6);
     color: $pure-white;
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(-45deg,#3d0e6e,#99287f);
+    }
     h2{
       font-weight: $zilla-bold;
     }
@@ -162,7 +165,9 @@
     @media (prefers-color-scheme: dark) {
       color: $pure-white;
       background: url(../img/speed-stripes-darkmode.svg), linear-gradient(45deg, darken(rgba(241,206,0,1),30%) 0%, darken(rgba(255,161,0,1), 30%) 100%);
-
+      img{
+        filter: none;
+      }
     }
     span{
       display: block;
@@ -187,7 +192,7 @@
   }
   .hero-card{
     background-color: semantic-color(hero-card-bg);
-    color: semantic-color(text-inverted);
+    color: semantic-color(text-on-dark-bg-always);
     border-radius: $tile-radius-big;
     position: relative;
     margin-bottom: 0;

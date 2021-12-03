@@ -51,6 +51,11 @@
       grid-row: 1 / 7;
       aspect-ratio: 1 / 1;
       padding: 4rem;
+      @media (prefers-color-scheme: dark) {
+        img{
+          filter: none;
+        }
+      }
       h2{
         font-weight: $zilla-bold;
         line-height: 1;
@@ -207,6 +212,9 @@
             margin-left: 0.15em;
             @include breakpoint(small only) {
               width: 1em;
+            }
+            @media (prefers-color-scheme: dark) {
+              filter: none;
             }
           }
         }
