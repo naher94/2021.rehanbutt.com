@@ -108,7 +108,7 @@
       background: -webkit-linear-gradient(45deg,#ED5D6B, #571A9D);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      color: #571A9D;
+      color: #571A9D; //in the case of fall back
     }
     h2{
       font-weight: $caveat-bold;
@@ -120,8 +120,7 @@
     h3{
       padding-left: 8rem;
       padding-right: 8rem;
-      line-height: 0.8;
-      // TODO fix line height clipping issue for the Y
+      line-height: 1.1em;
       @include breakpoint(small only){
         padding-left: 0.5rem;
         padding-right: 0.5rem;
