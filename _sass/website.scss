@@ -98,15 +98,17 @@
       padding: 6rem;
       padding-top: 4rem;
       position: absolute;
+      z-index: 1;
       @include breakpoint(small only){
         padding: 1rem;
       }
     }
-    h2,h3{ //TODO not working with the image filter as a sibling
+    h2,h3{
       font-family: $caveat;
       background: -webkit-linear-gradient(45deg,#ED5D6B, #571A9D);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      color: #571A9D;
     }
     h2{
       font-weight: $caveat-bold;
