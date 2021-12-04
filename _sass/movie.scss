@@ -34,6 +34,9 @@ body, html {
     right: -3em;
     transform: rotate(10deg);
     z-index: 2;
+    @include breakpoint(small only){
+      width: 14em;
+    }
   }
 }
 
@@ -43,6 +46,9 @@ body, html {
   overflow: hidden;
   background-color: $pure-white;
   min-height: 20em;
+  @include breakpoint(small only){
+    font-size: 80%;
+  }
   &.feature-number{
     background: linear-gradient(-45deg,#A5FF36,#33D5FF);
     font-family: $big-shoulders;
@@ -109,6 +115,10 @@ body, html {
     .dots{
       margin-top: 1rem;
       margin-bottom: 1rem;
+      @include breakpoint(small only){
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
       div{
         aspect-ratio: 1/1;
         width: 15px;
@@ -152,6 +162,9 @@ body, html {
       font-family: $big-shoulders;
       font-size: 4.5em;
       line-height: 1;
+      @include breakpoint(small only){
+        padding: 0;
+      }
       span{
         font-weight: $big-shoulders-black;
       }
@@ -172,6 +185,107 @@ body, html {
       max-width: 100%;
       transform: rotate(4deg);
       bottom: -15%;
+      @include breakpoint(small only){
+        bottom: -30%;
+      }
+    }
+  }
+  &.day-week{
+    background: linear-gradient(180deg,#00BF8F,#113F4F);
+    padding: 2rem;
+    position: relative;
+    h2{
+      font-family: $big-shoulders;
+      font-weight: $big-shoulders-regular;
+      font-size: 2.5em;
+      color: $pure-white;
+      span{
+        font-weight: $big-shoulders-black;
+        font-size: 1.7em;
+        display: block;
+        line-height: 1;
+      }
+    }
+    .graph{
+      .day{
+        &:not(:last-of-type){
+          margin-right: 5px;
+        }
+        p{
+          font-family: $big-shoulders;
+          color: $pure-white;
+          padding: 0;
+          margin: 0;
+          text-transform: capitalize;
+          text-align: center;
+          font-size: 2em;
+        }
+        .height-elem{
+          background-color: rgba($pure-black, 0.6);
+          border-radius: $tile-radius;
+          transition: $sprint;
+          &:hover{
+            background-color: rgba($pure-white, 0.5);
+            cursor: pointer;
+            border: solid 3px $pure-white;
+          }
+          &:hover ~ .hover-number{
+            display: block;
+            transition: $sprint;
+          }
+        }
+        .hover-number{
+          margin-right: 2rem;
+          margin-top: 2rem;
+          padding: 0.25em 0.5em;
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-radius: $tile-radius;
+          color: $pure-white;
+          background-color: rgba($pure-black, 0.6);
+          border: solid 3px $pure-white;
+          font-family: $big-shoulders;
+          font-weight: $big-shoulders-black;
+          font-size: 1.5em;
+        }
+        &.mon{
+          .height-elem{
+            height: 50%;
+          }
+        }
+        &.tue{
+          .height-elem{
+            // height: 30%;
+          }
+        }
+        &.wed{
+          .height-elem{
+            // height: 30%;
+          }
+        }
+        &.thu{
+          .height-elem{
+            // height: 30%;
+          }
+        }
+        &.fri{
+          .height-elem{
+            height: 80%;
+          }
+        }
+        &.sat{
+          .height-elem{
+            height: 100%;
+          }
+        }
+        &.sun{
+          .height-elem{
+            height: 100%;
+          }
+        }
+      }
     }
   }
   &.end-card{
@@ -195,6 +309,11 @@ body, html {
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 100%;
+  @include breakpoint(small only) {
+    min-height: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
   .punch{
     background-color: $pure-white;
     width: 10%;
@@ -252,6 +371,9 @@ body, html {
       // min-width: 40vw;
       min-width: 40rem;
       background: $pure-black;
+      @include breakpoint(small only) {
+        min-width: 30rem;
+      }
       &:before{
         position: absolute;
         content: '';

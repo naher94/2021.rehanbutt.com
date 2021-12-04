@@ -78,7 +78,7 @@
         <div class="horizontal-scroll-section__content-section">
           {{ punch-container }}
           <div class="film first-watched grid-x">
-            <div class="cell medium-6 grid-x">
+            <div class="cell small-6 grid-x">
               <div class="cell">
                 <h2><span>1st</span> Watched</h2>
               </div>
@@ -86,7 +86,7 @@
                 <p>Soul</p>
               </div>
             </div>
-            <div class="cell medium-6 poster-wrapper">
+            <div class="cell small-6 poster-wrapper">
               <img class="poster" src="/img/soul-poster.jpg" alt="Pixar's Soul Movie Poster">
             </div>
           </div>
@@ -101,8 +101,26 @@
         </div>
         <div class="horizontal-scroll-section__content-section">
           {{ punch-container }}
-          <div class="film">
-            <h2>day of the week break down</h2>
+          <div class="film grid-y day-week">
+            <div class="cell shink">
+              <h2>Day of the week <span>Breakdown</span></h2>
+            </div>
+            <div class="cell auto graph grid-x">
+              {%- assign days = "mon,tue,wed,thu,fri,sat,sun" | split: "," -%}
+              {%- assign film-by-days = "12,150,123,984,11212,121,94" | split: "," -%}
+              {%- for i in (0..6) -%}
+                <div class="day cell auto grid-x {{days[i]}}">
+                  <div class="height-elem cell grid-x align-self-bottom">
+                    <div class="cell align-self-bottom">
+                      <p>{{ days[i] | slice: 0 }}</p>
+                    </div>
+                  </div>
+                  <div class="hover-number">
+                    {{ film-by-days[i]}} films
+                  </div>
+                </div>
+              {%- endfor -%}
+            </div>
           </div>
           {{ punch-container }}
         </div>
