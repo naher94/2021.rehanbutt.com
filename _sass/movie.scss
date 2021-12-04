@@ -49,6 +49,20 @@ body, html {
   @include breakpoint(small only){
     font-size: 80%;
   }
+  &.intro-theme{
+    // background: url('/img/felt-texture.jpg') no-repeat center center;
+    // background-blend-mode: overlay;
+    // background-color: #415B50;
+    background: linear-gradient(to top right, #ffab00, #6b0067);
+    position: relative;
+    img{
+      position: absolute;
+      transform: rotate(10deg);
+      max-width: 70%;
+      right: 2.5em;
+      top: 2em;
+    }
+  }
   &.feature-number{
     background: linear-gradient(-45deg,#A5FF36,#33D5FF);
     font-family: $big-shoulders;
@@ -190,6 +204,50 @@ body, html {
       }
     }
   }
+  &.busy-day{
+    background: linear-gradient(180deg,#3F0707,#3B0030);
+    color: $pure-white;
+    font-family: $big-shoulders;
+    .day-most{
+      background-color: rgba($pure-white, 0.2);
+      border-radius: 12px;
+      padding: 1em;
+      h2{
+        font-family: $big-shoulders;
+        font-weight: $big-shoulders-black;
+        line-height: 1;
+        span{
+          font-weight: $big-shoulders-regular;
+          display: block;
+          font-size: 0.7em;
+        }
+      }
+      p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8em;
+        line-height: 1.2;
+      }
+    }
+    .averages{
+      padding: 1em;
+      p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.8em;
+        line-height: 1;
+        &.number{
+          font-size: 2.2em;
+          font-weight: $big-shoulders-black;
+        }
+      }
+      .avg-wrapper{
+        &:first-of-type{
+          margin-bottom: 1.5em;
+        }
+      }
+    }
+  }
   &.day-week{
     background: linear-gradient(180deg,#00BF8F,#113F4F);
     padding: 2rem;
@@ -227,7 +285,6 @@ body, html {
           &:hover{
             background-color: rgba($pure-white, 0.5);
             cursor: pointer;
-            border: solid 3px $pure-white;
           }
           &:hover ~ .hover-number{
             display: block;
@@ -245,7 +302,6 @@ body, html {
           border-radius: $tile-radius;
           color: $pure-white;
           background-color: rgba($pure-black, 0.6);
-          border: solid 3px $pure-white;
           font-family: $big-shoulders;
           font-weight: $big-shoulders-black;
           font-size: 1.5em;
