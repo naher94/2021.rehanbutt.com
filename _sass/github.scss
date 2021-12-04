@@ -70,6 +70,13 @@
         grid-row: 1 / 5;
         padding: 2rem;
       }
+      a{
+        &:hover{
+          img{
+            animation: boing 600ms ease-out;
+          }
+        }
+      }
       img{
         @include breakpoint(small only){
           width: 4em;
@@ -184,6 +191,9 @@
               transition: $sprint;
               p{
                 margin-left: 0.25em;
+              }
+              @media (prefers-color-scheme: dark) {
+                filter: none;
               }
             }
           }
