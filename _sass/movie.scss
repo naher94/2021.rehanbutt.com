@@ -46,7 +46,9 @@ body, html {
   &.feature-number{
     background: linear-gradient(-45deg,#A5FF36,#33D5FF);
     font-family: $big-shoulders;
-    // margin: auto;
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(-45deg,#65a01e,#1d829b);
+    }
     p{
       margin: 0;
       padding: 0;
@@ -64,6 +66,9 @@ body, html {
     color: $pure-white;
     position: relative;
     overflow: hidden;
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(180deg,#880000,#290000);
+    }
     .fas{
       position: absolute;
       top: 0.5rem;
@@ -212,7 +217,7 @@ body, html {
     position: absolute;
     height: 100vh;
     top: 0;
-    left: -14vw; //todo adjust for start shift
+    left: -14vw; //TODO adjust for start shift
     right: 0;
     transform: rotate(-5deg);
     &--active {
@@ -232,7 +237,6 @@ body, html {
 
 .horizontal-scroll-section {
   position: relative;
-  // background-color: silver;
   &__content {
     display: flex;
     align-items: center;
@@ -241,7 +245,6 @@ body, html {
       height: 100%;
       align-items: center;
       position: relative;
-      // background: lightgreen;
     }
     &-section {
       position: relative;
