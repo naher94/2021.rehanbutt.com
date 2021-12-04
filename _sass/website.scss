@@ -256,6 +256,9 @@
     }
     .image-wrapper{
       padding-top: 1rem;
+      @include breakpoint(small only){
+        padding-top: 0;
+      }
     }
   }
 }
