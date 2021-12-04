@@ -50,9 +50,7 @@ body, html {
     font-size: 80%;
   }
   &.intro-theme{
-    // background: url('/img/felt-texture.jpg') no-repeat center center;
-    // background-blend-mode: overlay;
-    // background-color: #415B50;
+
     background: linear-gradient(to top right, #ffab00, #6b0067);
     position: relative;
     img{
@@ -392,7 +390,7 @@ body, html {
     position: absolute;
     height: 100vh;
     top: 0;
-    left: -14vw; //TODO adjust for start shift
+    left: -14vw; //adjust for start position shift
     right: 0;
     transform: rotate(-5deg);
     &--active {
@@ -403,11 +401,6 @@ body, html {
       bottom: 0;
       top: auto;
     }
-    // .overflow{
-    //   position: absolute;
-    //   right: -40vw;
-    //   top: 0;
-    // }
   }
 
 .horizontal-scroll-section {
@@ -424,7 +417,6 @@ body, html {
     &-section {
       position: relative;
       padding: 1rem 2rem;
-      // min-width: 40vw;
       min-width: 40rem;
       background: $pure-black;
       @include breakpoint(small only) {
