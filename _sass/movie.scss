@@ -50,9 +50,11 @@ body, html {
     font-size: 80%;
   }
   &.intro-theme{
-
     background: linear-gradient(to top right, #ffab00, #6b0067);
     position: relative;
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(to top right, #835800, #490046);
+    }
     img{
       position: absolute;
       transform: rotate(10deg);
@@ -250,6 +252,9 @@ body, html {
     background: linear-gradient(180deg,#00BF8F,#113F4F);
     padding: 2rem;
     position: relative;
+    @media (prefers-color-scheme: dark) {
+      background: linear-gradient(#00785a, #113f4f);    
+    }
     h2{
       font-family: $big-shoulders;
       font-weight: $big-shoulders-regular;
@@ -344,14 +349,29 @@ body, html {
   }
   &.end-card{
     color: $pure-white;
-    background: url("/img/thats-all-folks-bg.jpg") no-repeat center center, radial-gradient(#BF5218,#580510);
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
     font-family: $caveat;
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background: url("/img/thats-all-folks-bg.jpg") no-repeat center center, radial-gradient(#BF5218,#580510);
+      background-size: cover;
+      display: block;
+      width: 110%;
+      height: 110%;
+      @media (prefers-color-scheme: dark) {
+        filter: brightness(0.8);
+      }
+    }
     h2{
       font-family: $caveat;
       font-weight: $caveat-bold;
       font-size: 4em;
       text-shadow: 0 0 0.5em $pure-black;
+      position: relative;
+      z-index: 2;
     }
   }
 }
