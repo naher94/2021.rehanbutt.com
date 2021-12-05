@@ -23,7 +23,7 @@
     height: 100%;
   }
   .glass-panel{
-    background-color: rgba(semantic-color(page-bg), 1);
+    background-color: rgba($pure-white, 0.5);
     border-radius: $tile-radius-medium;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
@@ -31,6 +31,9 @@
     font-family: $big-shoulders;
     border: 5px solid semantic-color(page-bg);
     box-shadow: $recessed-shadow;
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(#06080C, 0.5);
+    }
     h2{
       font-family: $big-shoulders;
       font-weight: $big-shoulders-black;
