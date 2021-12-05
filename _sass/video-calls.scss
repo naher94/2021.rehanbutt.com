@@ -6,6 +6,10 @@
       padding: 1rem 2rem;
       font-size: 2em;
       margin-top: 1rem;
+      @include breakpoint(small only){
+        padding: 0.5rem 1rem;
+        font-size: 1.5em;
+      }
     }
     &-me{
       border-bottom-right-radius: 20px;
@@ -25,16 +29,26 @@
     border-bottom-right-radius: 10px;
     padding: 3rem;
     margin-bottom: 2rem;
+    @include breakpoint(small only){
+      padding: 2rem;
+      margin-bottom: 1rem;
+    }
     h2{
       font-family: $lato;
       font-weight: $lato-bold;
       line-height: 1;
+      @include breakpoint(small only){
+        font-size: 3em;
+      }
     }
     p{
       margin: 0;
       padding: 0;
       font-size: 2em;
       line-height: 1;
+      @include breakpoint(small only){
+        font-size: 1.5em;
+      }
     }
   }
   .time-stamp{
@@ -48,35 +62,24 @@
       font-weight: $lato-bold;
     }
   }
-  @keyframes call-ring {
-    0% {
-        transform: rotate(0) scale(1) skew(1deg)
-    }
-    10% {
-        transform: rotate(-10deg) scale(1) skew(1deg)
-    }
-    20% {
-        transform: rotate(10deg) scale(1) skew(1deg)
-    }
-    30% {
-        transform: rotate(-10deg) scale(1) skew(1deg)
-    }
-    40% {
-        transform: rotate(10deg) scale(1) skew(1deg)
-    }
-    50% {
-        transform: rotate(0) scale(1) skew(1deg)
-    }
-    100% {
-        transform: rotate(0) scale(1) skew(1deg)
-    }
-}
+  @keyframes call-ring{
+    0% { transform: rotate(0) scale(1) skew(1deg) }
+    10% { transform: rotate(-10deg) scale(1) skew(1deg) }
+    20% { transform: rotate(10deg) scale(1) skew(1deg) }
+    30% { transform: rotate(-10deg) scale(1) skew(1deg) }
+    40% { transform: rotate(10deg) scale(1) skew(1deg) }
+    50% { transform: rotate(0) scale(1) skew(1deg) }
+    100% { transform: rotate(0) scale(1) skew(1deg) }
+  }
   .fa-video{
     margin-left: 0.25em;
     animation: call-ring 2s infinite ease-in-out;
   }
   .react-wrapper{
     margin-top: -1rem;
+    @include breakpoint(small only){
+      margin-top: -0.5rem;
+    }
     &.react-wrapper-me{
       text-align: right;
     }
@@ -88,12 +91,21 @@
         border: 4px solid semantic-color(page-bg);
         display: inline-block;
         font-size: 1.2em;
+        @include breakpoint(small only){
+          font-size: 0.8em;
+        }
       }
       &-them{
         margin-left: 1.5rem;
+        @include breakpoint(small only){
+          margin-left: 1rem;
+        }
       }
       &-me{
         margin-right: 1.5rem;
+        @include breakpoint(small only){
+          margin-right: 1rem;
+        }
       }
     }
   }
@@ -104,7 +116,7 @@
   }
   .typing{
     .loadingCircle {
-      animation-duration: 1s;
+      animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-name: loading;
     }
