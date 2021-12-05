@@ -1,0 +1,85 @@
+.lastly{
+  .full-bleed{
+    font-family: $zilla;
+    font-weight: $zilla-light;
+    color: rgba($navy-black, 0.15);
+    white-space: nowrap;
+    text-align: center;
+    font-size: 32vw;
+    width: calc(100% + 3vw);
+    padding: 0;
+    margin: 0;
+    margin-left: -3vw;
+    line-height: 1.5em;
+    overflow: hidden;
+    @media (prefers-color-scheme: dark) {
+      // color: rgba($pure-white-dark, 0.30);
+    }
+  }
+  .lastly-grid-container{
+    margin-top: -20vw;
+    p{
+      margin: 0;
+      padding: 0;
+    }
+    .blurb{
+      text-align: center;
+      font-family: $zilla;
+      font-weight: $zilla-bold;
+      line-height: 1em;
+      font-size: 3em;
+      padding: 0 3.4em;
+      @media screen and (max-width: 64em) {
+        font-size: 2em;
+        padding: 0 2.5em;
+      }
+      @media screen and (max-width: 40em) {
+        font-size: 1.5em;
+        padding: 0 1em;
+      }
+    }
+    .emoji-container{
+      position: relative;
+      @media screen and (max-width: 64em) {
+        font-size: 0.7em;
+      }
+      @media screen and (max-width: 40em) {
+        font-size: 0.5em;
+      }
+      .emoji-left{
+        display: inline-block;
+        position: absolute;
+        top: -20vw;
+        left: 4vw;
+      }
+      .emoji{
+        font-size: 4em;
+        display: inline-block;
+        position: absolute;
+      }
+      .boom{
+        font-size: 6em;
+        transform: rotate(20deg);
+        left: 5vw;
+        @media screen and (max-width: 64em) {
+          top: -10vw;
+        }
+        @media screen and (max-width: 40em) {
+          top: -14vw;
+        }
+      }
+      .mask{
+        transform: rotate(-20deg);
+        top: 8vw;
+        @media screen and (max-width: 40em) {
+          top: 12vw;
+        }
+      }
+      .party{
+        transform: rotate(14deg);
+        right: 4vw;
+        top: -4vw;
+      }
+    }
+  }
+}
