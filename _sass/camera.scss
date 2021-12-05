@@ -31,13 +31,16 @@
         font-size: 4em;
       }
       span{
-        font-size: 2.5em;
-        position: absolute;
-        left: 0;
-        top: -0.1em;
-        font-weight: $big-shoulders-regular;
-        opacity: 0.3;
-        line-height: 1;
+        display: block;
+        &.and{
+          font-size: 2.5em;
+          position: absolute;
+          left: 0;
+          top: -0.1em;
+          font-weight: $big-shoulders-regular;
+          opacity: 0.3;
+          line-height: 1;
+        }
       }
     }
     p{
