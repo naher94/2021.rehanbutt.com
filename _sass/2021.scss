@@ -4,8 +4,9 @@
     background-color: white;
     padding-top: 6rem;
     padding-bottom: 12rem;
+    background-color: semantic-color(page-bg);
     @media (prefers-color-scheme: dark) {
-      background-color: #06080C;
+      // background-color: #06080C;
       color: $pure-white;
     }
     @include breakpoint(medium only) {

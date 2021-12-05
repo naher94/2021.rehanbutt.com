@@ -76,6 +76,7 @@ $navy-black-l9: mix($pure-white, $navy-black, 90%);
 //// This method allows for several flavors of a color to be added such as a dark mode or a high contrast for example
 $semantic-colors:(
   light:(
+    page-bg: $pure-white,
     text: $navy-black,
     text-inverted: $pure-white,
     text-on-light-bg-always: $navy-black,
@@ -101,6 +102,7 @@ $semantic-colors:(
     logo-header: $navy-black,
   ),
   dark:(
+    page-bg: #06080C,
     text: $pure-white,
     text-inverted: $navy-black,
     text-on-light-bg-always: $navy-black,

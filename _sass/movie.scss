@@ -392,8 +392,8 @@ body, html {
     background-color: $pure-white;
     width: 10%;
     border-radius: 10px;
+    background-color: semantic-color(page-bg);
     @media (prefers-color-scheme: dark) {
-      background-color: #06080C;
       box-shadow: $pure-white 0px 0px 25px -10px inset;
     }
   }
