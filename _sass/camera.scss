@@ -1,0 +1,62 @@
+.camera{
+  height: 100vh;
+  background-image: url("/img/photo-gallery.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: marquee 300s infinite linear;
+  .grid-container, .grid-x{
+    height: 100%;
+  }
+  .glass-panel{
+    background-color: rgba($pure-white, 0.5);
+    border-radius: $tile-radius-medium;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    font-family: $big-shoulders;
+    border: 5px solid $pure-white;
+    box-shadow: $recessed-shadow;
+    h2{
+      font-family: $big-shoulders;
+      font-weight: $big-shoulders-black;
+      font-size: 6em;
+      line-height: 1;
+      position: relative;
+      margin-bottom: 0.5em;
+      span{
+        font-size: 2.5em;
+        position: absolute;
+        left: 0;
+        top: -0.1em;
+        font-weight: $big-shoulders-regular;
+        opacity: 0.3;
+        line-height: 1;
+      }
+    }
+    p{
+      padding: 0;
+      margin: 0;
+      font-size: 2em;
+      line-height: 1.2;
+    }
+    .explore-button{
+      color: $navy-black;
+      padding: 0.5rem 1rem;
+      border: solid $navy-black;
+      border-radius: $tile-radius;
+      font-weight: $big-shoulders-black;
+      display: inline-block;
+      transition: $sprint;
+      margin-top: 2rem;
+      &:hover{
+        background-color: $navy-black;
+        color: $pure-white;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% { background-position: 0; }
+  100% { background-position: -6000px; }
+}
