@@ -1,5 +1,8 @@
 .video-calls{
   margin-top: 20rem;
+  @include breakpoint(small only){
+    margin-top: 10rem;
+  }
   .bubble{
     &-me, &-them{
       border-radius: 100px;
