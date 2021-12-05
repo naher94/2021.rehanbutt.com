@@ -8,125 +8,28 @@
       background-color: #06080C;
       color: $pure-white;
     }
-    @media screen and (max-width: 64em) {
+    @include breakpoint(medium only) {
       padding-top: 3rem;
     }
-    @media screen and (max-width: 40em) {
+    @include breakpoint(small only) {
       padding-top: 1.5rem;
     }
   }
-  .hero{
-    .hero-text{
-      font-family: $zilla;
-      font-size: 2.5em;
-      line-height: 1.2em;
-      text-align: justify;
-      padding-left: 0;
-      padding-right: 0;
-      @media screen and (max-width: 64em) {
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 1.5em;
-      }
-      span{
-        position: relative;
-        span{
-          display: none;
-          position: absolute;
-        }
-      }
-      .wow{
-        .wow-react{
-          display: block;
-          width: 100%;
-          opacity: 0.5;
-          z-index: -1;
-          font-size: 2em;
-          text-align: center;
-          margin-top: -25%;
-        }
-      }
-    }
-  }
-
-
-  .duolingo{
-    margin-top: 6em;
-    margin-bottom: 3em;
-    .duolingo-container{
-      border-radius: 40px;
-      padding: 4rem 4rem;
-      background-color: $navy-black;
-      -webkit-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      -moz-box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      box-shadow: 0px 0px 100px 0px rgba($navy-black,0.25);
-      background-image: url(../img/fireworks.svg);
-      @media (prefers-color-scheme: dark) {
-        background-image: url(../img/fireworks-darkmode.svg);
-      }
-      background-repeat: no-repeat;
-      background-position: 90% 15%;
-      @media screen and (max-width: 64em) {
-        background-size: 50%;
-      }
-      @media screen and (max-width: 40em) {
-        padding: 2rem;
-      }
-      .text{
-        // font-family: $montserrat;
-        color: $pure-white;
-        p{
-          padding: 0;
-          margin: 0;
-        }
-        .minutes, .words{
-          font-size: 5em;
-          line-height: 0.9em;
-          // font-weight: $montserrat-light;
-          span{
-            // font-weight: $montserrat-black;
-          }
-          @media screen and (max-width: 40em) {
-            font-size: 3em;
-          }
-        }
-        .minutes{
-          span{
-            color: #1CB0F6;
-            @media (prefers-color-scheme: dark) {
-              color: darken(#1CB0F6, 10%);
-            }
-          }
-        }
-        .words{
-          span{
-            color: #58CC02;
-            @media (prefers-color-scheme: dark) {
-              color: darken(#58CC02, 10%);
-            }
-          }
-        }
-        .sentance{
-          font-size: 2em;
-          line-height: 1.2em;
-          // font-weight: $montserrat-black;
-          margin-top: 0.5em;
-          @media screen and (max-width: 40em) {
-            font-size: 1.5em;
-          }
-        }
-        .footnote{
-          margin-top: 0.5em;
-          @media screen and (max-width: 40em) {
-            font-size: 0.8em;
-          }
-        }
-      }
-      .fireworks{
-
-      }
-    }
-  }
+  // .hero{
+  //   .hero-text{
+  //     font-family: $zilla;
+  //     font-size: 2.5em;
+  //     line-height: 1.2em;
+  //     text-align: justify;
+  //     padding-left: 0;
+  //     padding-right: 0;
+  //     @include breakpoint(medium down){
+  //       padding-left: 1em;
+  //       padding-right: 1em;
+  //       font-size: 1.5em;
+  //     }
+  //   }
+  // }
 
 
 }
