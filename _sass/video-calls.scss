@@ -18,7 +18,7 @@
     }
     &-them{
       border-bottom-left-radius: 20px;
-      background-color: #E9E9EB;
+      background-color: semantic-color(chat-bubble-them-bg);
     }
   }
   .intro{
@@ -85,7 +85,7 @@
     }
     .bubble-reaction{
       &-them, &-me{
-        background-color: #E9E9EB;
+        background-color: semantic-color(chat-bubble-them-bg);
         padding: 0.5rem 1rem;
         border-radius: 100px;
         border: 4px solid semantic-color(page-bg);
