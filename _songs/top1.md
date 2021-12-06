@@ -1,7 +1,7 @@
 ---
-album-cover: "music-sadder.jpg"
-song-name: Dance Dance Dance
-artist: Astrid S
-play-count: 37
+album-cover: "music-difference.jpg"
+song-name: The Difference
+artist: Daya
+play-count: 35
 link: "https://rehanbutt.com/about"
 ---

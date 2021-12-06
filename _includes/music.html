@@ -2,12 +2,12 @@
   <div class="grid-x">
     <div class="cell music-container grid-x">
       <div class="cell">
-        <h2>527<span class="hrs">hrs</span> <span class="description">of music listened to</span></h2>
+        <h2>540<span class="hrs">hrs</span> <span class="description">of music listened to</span></h2>
 
         <h3>Top 3 most played songs</h3>
       </div>
       <div class="song-container cell grid-x align-center">
-        
+        <!-- TODO fix the wrap for artist and play count -->
         {% assign songs_order = site.songs | sort: 'play-count' | reverse %}
           {%- for song in songs_order -%}
           {% capture song-card %}
