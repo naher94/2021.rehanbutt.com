@@ -132,6 +132,11 @@
       }
     }
   }
+  .tile-wrapper{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
   .bio, .speed, .filed-away{
     border-radius: $tile-radius-big;
     padding: 3rem;
@@ -183,6 +188,9 @@
   }
   .filed-away{
     background-color: $pure-white;
+    @include breakpoint(small only){
+      margin-top: calc(0.625rem * 2);
+    }
     h2{
       font-weight: $zilla-bold;
     }
