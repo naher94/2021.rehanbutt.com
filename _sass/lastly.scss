@@ -29,21 +29,21 @@
       line-height: 1em;
       font-size: 3em;
       padding: 0 3.4em;
-      @media screen and (max-width: 64em) { //TODO remove all these media queries replace with include breakpoint function
+      @include breakpoint(medium down) {
         font-size: 2em;
         padding: 0 2.5em;
       }
-      @media screen and (max-width: 40em) {
+      @include breakpoint(small only) {
         font-size: 1.5em;
         padding: 0 1em;
       }
     }
     .emoji-container{
       position: relative;
-      @media screen and (max-width: 64em) {
+      @include breakpoint(medium down) {
         font-size: 0.7em;
       }
-      @media screen and (max-width: 40em) {
+      @include breakpoint(small only) {
         font-size: 0.5em;
       }
       .emoji-left{
@@ -61,17 +61,17 @@
         font-size: 6em;
         transform: rotate(20deg);
         left: 5vw;
-        @media screen and (max-width: 64em) {
+        @include breakpoint(medium down) {
           top: -10vw;
         }
-        @media screen and (max-width: 40em) {
+        @include breakpoint(small only) {
           top: -14vw;
         }
       }
       .mask{
         transform: rotate(-20deg);
         top: 8vw;
-        @media screen and (max-width: 40em) {
+        @include breakpoint(small only) {
           top: 12vw;
         }
       }

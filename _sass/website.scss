@@ -187,7 +187,7 @@
     span{
       display: block;
     }
-    @media screen and (max-width: 64em) {
+    @include breakpoint(medium down){
       font-size: 2.3em;
       line-height: 2.3rem;
     }

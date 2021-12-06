@@ -5,7 +5,7 @@
     font-weight: $montserrat-black;
     font-size: 10vw;
     line-height: 7vw;
-    @media screen and (max-width: 64em) {
+    @include breakpoint(medium down) {
       font-size: 20vw;
       line-height: 14vw;
     }
@@ -15,7 +15,7 @@
     .description{
       font-size: 5vw;
       display: block;
-      @media screen and (max-width: 64em) {
+      @include breakpoint(medium down) {
         font-size: 12vw;
         line-height: 0.8em;
         margin-top: 0.2em;
@@ -33,7 +33,7 @@
     .song-tile{
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
-      @media screen and (max-width: 40em) {
+      @include breakpoint(small only) {
         margin-bottom: 2em;
         padding-left: 0;
         padding-right: 0;
@@ -62,10 +62,10 @@
           p{
             margin: 0;
             padding: 0;
-            @media screen and (max-width: 64em) {
+            @include breakpoint(medium down) {
               font-size: 0.8em;
             }
-            @media screen and (max-width: 40em) {
+            @include breakpoint(small only) {
               font-size: 1em;
             }
           }

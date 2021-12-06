@@ -1,6 +1,6 @@
 .leveled-up{
   margin-top: 10em;
-  @media screen and (max-width: 64em) {
+  @include breakpoint(medium down) {
     font-size: 0.7em;
   }
   .icon-container{
@@ -206,10 +206,10 @@
         display: inline-block;
         padding: 0.2em 0.6em;
         margin: 0.2em 0.1em;
-        @media screen and (max-width: 64em) {
+        @include breakpoint(medium down) {
           font-size: 1.4em;
         }
-        @media screen and (max-width: 40em) {
+        @include breakpoint(small only) {
           margin: 0.2em 0.1em;
         }
       }
