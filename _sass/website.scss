@@ -25,6 +25,9 @@
       @include breakpoint(small only){
         width: 2.5rem;
       }
+      @media (prefers-color-scheme: dark) {
+        filter: none;
+      }
     }
     h2,h3{
       font-family: $caveat;

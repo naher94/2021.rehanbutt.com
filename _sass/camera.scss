@@ -15,9 +15,9 @@
     @media (prefers-color-scheme: dark) {
       filter: brightness(0.8);
     }
-  }
-  @include breakpoint(small only){
-    background-size: cover;
+    @include breakpoint(small only){
+      background-size: cover;
+    }
   }
   .grid-container, .grid-x{
     height: 100%;
@@ -77,6 +77,14 @@
         background-color: $navy-black;
         color: $pure-white;
       }
+      @media (prefers-color-scheme: dark) {
+        color: $pure-white;
+        border: solid $pure-white;
+        &:hover{
+          background-color: $pure-white;
+          color: $navy-black;
+        }
+      }
     }
     .sound-wrapper{
       top: 5em;
@@ -85,6 +93,7 @@
         top: -1em;
         right: 9em;
       }
+    }
     .sound-wrapper2{
       bottom: -2em;
       right: 4em;
@@ -107,9 +116,13 @@
         font-size: 2em;
         &.click1, &.click2{
           background-color: #830ECA;
+          @media (prefers-color-scheme: dark) {
+            background-color: #58088a;
+          }
         }
         &.click1{
           transform: rotate(10deg);
+          // animation: click-click 2s ease-out infinite;
         }
         &.click2{
           transform: rotate(-15deg);
@@ -121,6 +134,9 @@
           background-color: #FFE30F;
           color: $pure-black;
           position: relative;
+          @media (prefers-color-scheme: dark) {
+            background-color: #cfb90f;
+          }
         }
         &.snap1{
           aspect-ratio: 1/1;

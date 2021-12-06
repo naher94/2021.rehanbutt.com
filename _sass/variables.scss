@@ -157,6 +157,22 @@ $sprint: all 0.20s ease-in-out;
 $run: all 0.30s ease-in-out;
 $jog: all 0.50s ease-in-out;
 
+@keyframes click-click{
+  0%{
+    transform: scale(1) rotate(10deg);
+  }
+  25%{
+    transform: scale(0.95) rotate(10deg);
+    background-color: #58088a;
+  }
+  50%{
+    transform: scale(1.05) rotate(10deg);
+  }
+  100%{
+    transform: scale(1) rotate(10deg);
+  }
+}
+
 @keyframes boing{
   15%{
     transform-origin: center center;
