@@ -123,6 +123,9 @@
         font-family: $source-code;
         font-size: 0.7em;
         opacity: 0.5;
+        @include breakpoint(small only){
+          font-size: 1em;
+        }
         span{
           display: block;
         }

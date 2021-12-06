@@ -91,6 +91,9 @@ body, html {
     }
     .data-of{
       font-size: 1em;
+      @include breakpoint(small only){
+        font-size: 1.5em;
+      }
     }
     .fas{
       position: absolute;
