@@ -115,6 +115,16 @@
       grid-row: 5 / 7;
       color: $pure-white;
       align-self: end;
+      p{
+        margin: 0;
+        padding: 0;
+        font-family: $source-code;
+        font-size: 0.7em;
+        opacity: 0.5;
+        span{
+          display: block;
+        }
+      }
       h3{
         font-family: $source-code;
         font-weight: $source-code-bold;
