@@ -1,6 +1,10 @@
 .shine-registry{
   margin-top: 15rem;
   margin-bottom: 6rem;
+  @include breakpoint(small only) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   .shine-container{
     overflow: hidden;
     position: relative;
