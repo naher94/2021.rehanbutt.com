@@ -13,7 +13,7 @@
     line-height: 1.5em;
     overflow: hidden;
     @media (prefers-color-scheme: dark) {
-      // color: rgba($pure-white-dark, 0.30);
+      color: rgba($pure-white, 0.30);
     }
   }
   .lastly-grid-container{
@@ -29,7 +29,7 @@
       line-height: 1em;
       font-size: 3em;
       padding: 0 3.4em;
-      @media screen and (max-width: 64em) {
+      @media screen and (max-width: 64em) { //TODO remove all these media queries replace with include breakpoint function
         font-size: 2em;
         padding: 0 2.5em;
       }
