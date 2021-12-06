@@ -23,6 +23,7 @@
     height: 100%;
   }
   .glass-panel{
+    position: relative;
     background-color: rgba($pure-white, 0.5);
     border-radius: $tile-radius-medium;
     -webkit-backdrop-filter: blur(15px);
@@ -75,6 +76,65 @@
       &:hover{
         background-color: $navy-black;
         color: $pure-white;
+      }
+    }
+    .sound-wrapper{
+      top: 5em;
+      right: 2em;
+      @include breakpoint(small only){
+        top: -1em;
+        right: 9em;
+      }
+    .sound-wrapper2{
+      bottom: -2em;
+      right: 4em;
+      transform: rotate(-8deg);
+      @include breakpoint(small only){
+        right: 2em;
+      }
+    }
+    .sound-wrapper, .sound-wrapper2{
+      position: absolute;
+      .pill{
+        display: inline-block;
+        position: absolute;
+        border-radius: $pill-radius;
+        padding: 0.5rem 1.5rem;
+        color: $pure-white;
+        font-weight: $big-shoulders-black;
+        line-height: 1;
+        box-shadow: $recessed-shadow $navy-black;
+        font-size: 2em;
+        &.click1, &.click2{
+          background-color: #830ECA;
+        }
+        &.click1{
+          transform: rotate(10deg);
+        }
+        &.click2{
+          transform: rotate(-15deg);
+          font-size: 1.5em;
+          top: -2em;
+          right: -6em;
+        }
+        &.snap1, &.snap2{
+          background-color: #FFE30F;
+          color: $pure-black;
+          position: relative;
+        }
+        &.snap1{
+          aspect-ratio: 1/1;
+          font-size: 1.5em;
+          padding: 0.5em;
+          &:before{
+            content: "📷";
+          }
+          &:hover{
+            &:before{
+              content: "📸";
+            }
+          }
+        }
       }
     }
   }
