@@ -89,6 +89,9 @@ body, html {
     @media (prefers-color-scheme: dark) {
       background: linear-gradient(180deg,#880000,#290000);
     }
+    .data-of{
+      font-size: 1em;
+    }
     .fas{
       position: absolute;
       top: 0.5rem;
