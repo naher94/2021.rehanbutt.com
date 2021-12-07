@@ -194,7 +194,7 @@
   }
   .right-skills, .left-skills{
     padding: 0 1em;
-    @include breakpoint(small only){
+    @include breakpoint(medium down){
       text-align: center;
     }
     .pill-container{
