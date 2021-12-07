@@ -69,7 +69,7 @@
       top: 6rem;
       right: 12rem;
       @include breakpoint(medium down) {
-        top: 6rem;
+        top: 10rem;
         right: 6rem;
       }
       @include breakpoint(small only) {
@@ -82,7 +82,7 @@
       top: 22rem;
       left: 12rem;
       @include breakpoint(medium down) {
-        top: 16rem;
+        top: 20rem;
         left: 6rem;
       }
       @include breakpoint(small only) {
