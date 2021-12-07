@@ -1,24 +1,33 @@
 <section class="joined grid-container">
   <div class="grid-x">
     <div class="spoken grid-x grid-margin-x">
-      <div class="cell medium-6 adplist">
+      <div class="cell medium-6 adplist grid-x">
+        <!-- TODO figure out why this image container is not wrapping the adp logo like it is with the duq one.. check the vertical sizing only seems to be an issue on tablet-->
         <div class="cell image-container">
           <img class="adplist-img" src="/img/adplist.svg" alt="ADPList Logo">
         </div>
-        <div class="cell">
-          <p class="title">Joined Amazing Design People List as a mentor</p>
-          <p class="description"> We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
-          {%- include external-link.html link="https://adplist.org/mentors/rehan-butt" content="<div class='explore-button'>Book a Session</div>"-%}
+        <div class="cell grid-x">
+          <div class="cell">
+            <p class="title">Joined Amazing Design People List as a mentor</p>
+            <p class="description"> We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
+          </div>
+          <div class="cell align-self-bottom">
+            {%- include external-link.html link="https://adplist.org/mentors/rehan-butt" content="<div class='explore-button'>Book a Session</div>"-%}
+          </div>
         </div>
       </div>
-      <div class="cell medium-6 duq">
+      <div class="cell medium-6 duq grid-x">
         <div class="cell image-container">
           <img src="/img/duq.svg" alt="Duquesne University Logo">
         </div>
-        <div class="cell">
-          <p class="title">Became adjunct faculty at Duquesne University</p>
-          <p class="description"> We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
-          {%- include external-link.html link="https://dma331.rehanbutt.com" content="<div class='explore-button'>Explore the Course</div>"-%}
+        <div class="cell grid-x">
+          <div class="cell">
+            <p class="title">Became adjunct faculty at Duquesne University</p>
+            <p class="description"> We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
+          </div>
+          <div class="cell align-self-bottom">
+            {%- include external-link.html link="https://dma331.rehanbutt.com" content="<div class='explore-button'>Explore the Course</div>"-%}
+          </div>
         </div>
       </div>
     </div>
