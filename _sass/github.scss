@@ -4,6 +4,9 @@
   padding-bottom: 10rem;
   margin-top: 14rem;
   margin-bottom: 14rem;
+  @include breakpoint(medium only){
+    font-size: 0.8em;
+  }
   @include breakpoint(small only){
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -26,7 +29,7 @@
         font-family: $source-code;
         padding: 2rem;
         font-size: 1.5em;
-        @include breakpoint(small only){
+        @include breakpoint(medium down){
           padding: 1rem;
           font-size: 1em;
         }
@@ -51,8 +54,11 @@
       color: $pure-white;
       grid-column: 1 / 7;
       grid-row: 1 / 7;
-      aspect-ratio: 1 / 1; //TODO check against chromium if there is a way to use this with grid
+      aspect-ratio: 1 / 1;
       padding: 4rem;
+      @include breakpoint(medium only){
+        padding: 2rem;
+      }
       @media (prefers-color-scheme: dark) {
         img{
           filter: none;
@@ -114,7 +120,7 @@
     }
     .contributions{
       grid-column: 7 / 12;
-      grid-row: 5 / 7;
+      grid-row: 4 / 7;
       color: $pure-white;
       align-self: end;
       p{
@@ -160,6 +166,9 @@
       grid-column: 1 / 7;
       grid-row: 11 / 17;
       font-family: $source-code;
+      @include breakpoint(medium only) {
+        padding: 2rem;
+      }
       @include breakpoint(small only) {
         grid-column: 1 / 5;
         grid-row: 13 / 17;
@@ -221,6 +230,9 @@
       grid-row: 18 / 22;
       align-self: end;
       font-size: 2em;
+      @include breakpoint(medium only){
+        font-size: 1.5em;
+      }
       @include breakpoint(small only) {
         grid-column: 1 / 5;
         grid-row: 18 / 20;
@@ -235,7 +247,7 @@
           display: inline-block;
           img{
             margin-left: 0.15em;
-            @include breakpoint(small only) {
+            @include breakpoint(medium down) {
               width: 1em;
             }
             @media (prefers-color-scheme: dark) {
@@ -288,6 +300,10 @@
       background: linear-gradient(90deg, #2A3D58,#1F2937);
       grid-column: 3/13;
       grid-row: 23/27;
+      @include breakpoint(medium only) {
+        grid-column: 1/13;
+        padding: 2rem;
+      }
       @include breakpoint(small only) {
         grid-column: 1 / 5;
         grid-row: 26 / 30;
