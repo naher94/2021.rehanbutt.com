@@ -24,6 +24,9 @@
     font-weight: $zilla-bold;
     font-size: 8rem;
     position: relative;
+    @include breakpoint(medium only){
+      font-size: 6rem;
+    }
     @include breakpoint(small only){
       font-size: 3rem;
     }
@@ -36,6 +39,9 @@
         transform: rotate(-10deg);
         left: -12rem;
         top: -6rem;
+        @include breakpoint(medium only){
+          left: -7rem;
+        }
         @include breakpoint(small only){
           left: -2rem;
           top: -3rem;
@@ -47,6 +53,9 @@
         transform: rotate(15deg);
         right: -8rem;
         top: -1rem;
+        @include breakpoint(medium only){
+          right: -5rem;
+        }
         @include breakpoint(small only){
           right: -2rem;
         }
@@ -57,6 +66,9 @@
         transform: rotate(-18deg);
         right: -12rem;
         top: -3rem;
+        @include breakpoint(medium only){
+          right: -7rem;
+        }
         @include breakpoint(small only){
           right: -2rem;
           top: -2.5rem;
