@@ -6,7 +6,7 @@
     content:"";
     height: 100vh;
     position: absolute;
-    background-image: url("/img/photo-gallery.png");
+    background-image: url("/img/photo-gallery.png"); //TODO replace this image
     background-repeat: repeat-x;
     background-size: contain;
     animation: marquee 300s infinite linear;
