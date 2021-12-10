@@ -1,6 +1,7 @@
 {% assign left-skills = "Design Ops,Project Management,Systems Design,Mentoring,Process Design,Remote Research" | split: ',' %}
 
-{% assign right-skills = "Design Ops,Project Management,Systems Design,Mentoring,Process Design,Remote Research" | split: ',' %}
+{% assign right-skills = "Teaching,Facilitation,Motion Design,and many more!" | split: ',' %}
+<!-- TODO add skills here -->
 
 <section class="leveled-up grid-container">
   <div class="grid-x align-middle">
@@ -9,7 +10,6 @@
         {%- for skill in left-skills -%}
           <div class="pill">{{skill}}</div>
         {%- endfor -%}
-        <div class="pill special">and many more!</div>
       </div>
     </div>  
     <div class="cell small-12 large-shrink icon-container small-order-1 large-order-2">
@@ -44,7 +44,7 @@
         {%- for skill in right-skills -%}
           <div class="pill">{{skill}}</div>
         {%- endfor -%}
-        <div class="pill special">and many more!</div>
+        <!-- <div class="pill special">and many more!</div> -->
       </div>
     </div>
     <div class="cell align-center text-container small-order-2 medium-order-4">
