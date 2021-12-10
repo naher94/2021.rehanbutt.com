@@ -1,6 +1,6 @@
 {% assign left-skills = "Design Ops,Project Management,Systems Design,Mentoring,Process Design,Remote Research" | split: ',' %}
 
-{% assign right-skills = "Teaching,Team Manangement,UX Writing,Data Analysis,Motion Design,and many more!" | split: ',' %}
+{% assign right-skills = "Teaching,Team Manangement,UX Writing,Data Analysis,Motion Design" | split: ',' %}
 
 <section class="leveled-up grid-container">
   <div class="grid-x align-middle">
@@ -43,7 +43,8 @@
         {%- for skill in right-skills -%}
           <div class="pill">{{skill}}</div>
         {%- endfor -%}
-        <!-- <div class="pill special">and many more!</div> -->
+        {%- include external-link.html link="https://rehanbutt.com/about#skills" content="<div class='pill special'>and many more!</div>
+        " -%}
       </div>
     </div>
     <div class="cell align-center text-container small-order-2 medium-order-4">
