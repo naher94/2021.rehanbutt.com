@@ -296,15 +296,15 @@ body, html {
             cursor: pointer;
           }
           &:hover ~ .hover-number{
-            display: block;
-            transition: $sprint;
+            opacity: 1;
           }
         }
         .hover-number{
           margin-right: 2rem;
           margin-top: 2rem;
           padding: 0.25em 0.5em;
-          display: none;
+          opacity: 0;
+          transition: $run;
           position: absolute;
           top: 0;
           right: 0;
