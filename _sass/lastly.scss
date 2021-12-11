@@ -1,13 +1,16 @@
 .lastly{
-  margin-top: 20rem;
+  margin-top: 15rem;
   .card{
-    background: #F7F7F7;
+    background: semantic-color(lastly-card-bg);
     border-radius: $tile-radius-big;
     $card-padding: 2rem;
     padding: $card-padding;
     color: $navy-black;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     transform: rotate(-2deg);
+    @media (prefers-color-scheme: dark){
+      border: none;
+    }
     .color-field{
       background: radial-gradient(circle at 0 0, #66FFF6, #A965FF);
       padding: 3rem;
@@ -36,6 +39,7 @@
       text-align: center;
       font-family: $zilla;
       padding-top: $card-padding;
+      color: semantic-color(text);
       p{
         padding: 0;
         margin: 0;
