@@ -7,6 +7,7 @@ $tile-radius-medium: 20px;
 $tile-radius-big: 30px;
 $pill-radius: 500px;
 $recessed-shadow: 0px 10px 33px -10px;
+$base-font-size: 20px;
 
 // Colors
 $pure-white: #ffffff;
@@ -150,6 +151,18 @@ $semantic-colors:(
       #{compose-color($key)}: #{$value};
     }
   }
+}
+
+@function toRem($value) {
+  $remValue: ($value / $base-font-size) * 1rem; 
+  @return $remValue;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
 }
 
 // Animations
