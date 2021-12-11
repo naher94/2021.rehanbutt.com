@@ -160,6 +160,11 @@ $semantic-colors:(
   @return $remValue;
 }
 
+@function toEm($value) {
+  $remValue: ($value / $base-font-size) * 1em; 
+  @return $remValue;
+}
+
 @function strip-unit($number) {
   @if type-of($number) == 'number' and not unitless($number) {
     @return $number / ($number * 0 + 1);
