@@ -21,9 +21,9 @@
     .color-field{
       background: radial-gradient(circle at 0 0, #66FFF6, #A965FF);
       padding: 3em;
-      border-radius: abs(toRem($tile-radius-big)-$card-padding);
+      border-radius: abs(toRem($tile-radius-big) - $card-padding);
       @include breakpoint(small only){
-        border-radius: abs(toRem($tile-radius-big)-$card-padding-mobile);
+        border-radius: abs(toRem($tile-radius-big) - $card-padding-mobile);
       }
       .and{
         font-size: 12em;
